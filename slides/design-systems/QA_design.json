@@ -1,0 +1,346 @@
+{
+  "checked_at_utc": "2026-11-08T18:41:27.305381+00:00",
+  "scope": "Local HTML design studies; glyph ink bounds, controls, claims and print export. SVG geometry and overall composition also require visual inspection.",
+  "directions": {
+    "aureo": {
+      "slides": [
+        {
+          "slide": 1,
+          "out_of_canvas": [],
+          "text_overlaps": [],
+          "verified_claim_instances": 0
+        },
+        {
+          "slide": 2,
+          "out_of_canvas": [],
+          "text_overlaps": [],
+          "verified_claim_instances": 0
+        },
+        {
+          "slide": 3,
+          "out_of_canvas": [],
+          "text_overlaps": [],
+          "verified_claim_instances": 0
+        },
+        {
+          "slide": 4,
+          "out_of_canvas": [],
+          "text_overlaps": [],
+          "verified_claim_instances": 3
+        },
+        {
+          "slide": 5,
+          "out_of_canvas": [],
+          "text_overlaps": [],
+          "verified_claim_instances": 5
+        },
+        {
+          "slide": 6,
+          "out_of_canvas": [],
+          "text_overlaps": [],
+          "verified_claim_instances": 8
+        },
+        {
+          "slide": 7,
+          "out_of_canvas": [],
+          "text_overlaps": [],
+          "verified_claim_instances": 2
+        },
+        {
+          "slide": 8,
+          "out_of_canvas": [],
+          "text_overlaps": [],
+          "verified_claim_instances": 0
+        }
+      ],
+      "loaded_fonts": [
+        {
+          "family": "Manrope",
+          "status": "loaded"
+        },
+        {
+          "family": "DM Serif Display",
+          "status": "loaded"
+        },
+        {
+          "family": "DM Serif Display",
+          "status": "loaded"
+        },
+        {
+          "family": "IBM Plex Mono",
+          "status": "loaded"
+        }
+      ],
+      "javascript_errors": [],
+      "keyboard_and_controls": "passed",
+      "offline_file_open": "passed",
+      "responsive": [
+        {
+          "viewport": [
+            1920,
+            1080
+          ],
+          "horizontal_overflow": false
+        },
+        {
+          "viewport": [
+            1024,
+            768
+          ],
+          "horizontal_overflow": false
+        },
+        {
+          "viewport": [
+            390,
+            844
+          ],
+          "horizontal_overflow": false
+        }
+      ],
+      "palette_matches_tokens": true,
+      "pdf_pages": 8
+    },
+    "vertice": {
+      "slides": [
+        {
+          "slide": 1,
+          "out_of_canvas": [],
+          "text_overlaps": [],
+          "verified_claim_instances": 3
+        },
+        {
+          "slide": 2,
+          "out_of_canvas": [],
+          "text_overlaps": [],
+          "verified_claim_instances": 0
+        },
+        {
+          "slide": 3,
+          "out_of_canvas": [],
+          "text_overlaps": [],
+          "verified_claim_instances": 0
+        },
+        {
+          "slide": 4,
+          "out_of_canvas": [],
+          "text_overlaps": [],
+          "verified_claim_instances": 2
+        },
+        {
+          "slide": 5,
+          "out_of_canvas": [],
+          "text_overlaps": [],
+          "verified_claim_instances": 7
+        },
+        {
+          "slide": 6,
+          "out_of_canvas": [],
+          "text_overlaps": [],
+          "verified_claim_instances": 6
+        },
+        {
+          "slide": 7,
+          "out_of_canvas": [],
+          "text_overlaps": [],
+          "verified_claim_instances": 2
+        },
+        {
+          "slide": 8,
+          "out_of_canvas": [],
+          "text_overlaps": [],
+          "verified_claim_instances": 3
+        }
+      ],
+      "loaded_fonts": [
+        {
+          "family": "Manrope",
+          "status": "loaded"
+        },
+        {
+          "family": "Space Grotesk",
+          "status": "loaded"
+        },
+        {
+          "family": "IBM Plex Mono",
+          "status": "loaded"
+        }
+      ],
+      "javascript_errors": [],
+      "keyboard_and_controls": "passed",
+      "offline_file_open": "passed",
+      "responsive": [
+        {
+          "viewport": [
+            1920,
+            1080
+          ],
+          "horizontal_overflow": false
+        },
+        {
+          "viewport": [
+            1024,
+            768
+          ],
+          "horizontal_overflow": false
+        },
+        {
+          "viewport": [
+            390,
+            844
+          ],
+          "horizontal_overflow": false
+        }
+      ],
+      "pdf_pages": 8
+    },
+    "meridiano": {
+      "slides": [
+        {
+          "slide": 1,
+          "out_of_canvas": [],
+          "text_overlaps": [],
+          "verified_claim_instances": 0
+        },
+        {
+          "slide": 2,
+          "out_of_canvas": [],
+          "text_overlaps": [],
+          "verified_claim_instances": 0
+        },
+        {
+          "slide": 3,
+          "out_of_canvas": [],
+          "text_overlaps": [],
+          "verified_claim_instances": 0
+        },
+        {
+          "slide": 4,
+          "out_of_canvas": [],
+          "text_overlaps": [],
+          "verified_claim_instances": 0
+        },
+        {
+          "slide": 5,
+          "out_of_canvas": [],
+          "text_overlaps": [],
+          "verified_claim_instances": 1
+        },
+        {
+          "slide": 6,
+          "out_of_canvas": [],
+          "text_overlaps": [],
+          "verified_claim_instances": 3
+        },
+        {
+          "slide": 7,
+          "out_of_canvas": [],
+          "text_overlaps": [],
+          "verified_claim_instances": 2
+        },
+        {
+          "slide": 8,
+          "out_of_canvas": [],
+          "text_overlaps": [],
+          "verified_claim_instances": 0
+        }
+      ],
+      "loaded_fonts": [
+        {
+          "family": "Manrope",
+          "status": "loaded"
+        },
+        {
+          "family": "Instrument Serif",
+          "status": "loaded"
+        },
+        {
+          "family": "Instrument Serif",
+          "status": "loaded"
+        },
+        {
+          "family": "IBM Plex Mono",
+          "status": "loaded"
+        }
+      ],
+      "javascript_errors": [],
+      "keyboard_and_controls": "passed",
+      "offline_file_open": "passed",
+      "responsive": [
+        {
+          "viewport": [
+            1920,
+            1080
+          ],
+          "horizontal_overflow": false
+        },
+        {
+          "viewport": [
+            1024,
+            768
+          ],
+          "horizontal_overflow": false
+        },
+        {
+          "viewport": [
+            390,
+            844
+          ],
+          "horizontal_overflow": false
+        }
+      ],
+      "pdf_pages": 8
+    }
+  },
+  "contrast": {
+    "aureo": {
+      "paper_on_dark": 15.31,
+      "gold_on_dark": 8.29,
+      "muted_on_dark": 9.15,
+      "reference_on_dark": 8.34,
+      "negative_on_dark": 7.94,
+      "bg_on_paper": 15.31,
+      "light-muted_on_paper": 5.45,
+      "light-gold_on_paper": 4.92,
+      "light-ref_on_paper": 4.92,
+      "light-negative_on_paper": 5.03,
+      "ink_on_gold": 8.29
+    },
+    "vertice": {
+      "paper_on_dark": 16.25,
+      "gold_on_dark": 11.35,
+      "muted_on_dark": 9.26,
+      "reference_on_dark": 10.72,
+      "negative_on_dark": 8.89,
+      "bg_on_paper": 16.25,
+      "light-muted_on_paper": 5.65,
+      "light-gold_on_paper": 5.77,
+      "light-ref_on_paper": 5.15,
+      "light-negative_on_paper": 5.19
+    },
+    "meridiano": {
+      "paper_on_dark": 14.0,
+      "gold_on_dark": 7.97,
+      "muted_on_dark": 9.28,
+      "reference_on_dark": 8.49,
+      "negative_on_dark": 7.75,
+      "bg_on_paper": 14.0,
+      "light-muted_on_paper": 5.71,
+      "light-gold_on_paper": 4.91,
+      "light-ref_on_paper": 4.88,
+      "light-negative_on_paper": 4.88
+    }
+  },
+  "library": {
+    "three_directions": true,
+    "all_cover_images_loaded": true,
+    "mobile_horizontal_overflow": false
+  },
+  "status": "passed",
+  "visual_review": {
+    "direction": "aureo",
+    "revision": "2.0",
+    "slides_reviewed": 8,
+    "method": "All eight revised compositions reviewed on the contact sheet; cover, brand sheet and convergence figure inspected at native resolution.",
+    "status": "completed"
+  }
+}

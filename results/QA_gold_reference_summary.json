@@ -1,0 +1,11 @@
+{
+  "n_dates": 1546,
+  "median_abs_level_difference_bps": 1.5133798134463294,
+  "p95_abs_level_difference_bps": 4.912354914143051,
+  "daily_return_correlation": 0.999648910620366,
+  "interpretation": "Sanity check: GLD fechamento/onças não é cotação física nem livro; custos e pequenos resíduos do fundo permanecem.",
+  "sources": [
+    "Dukascopy XAUUSD close at NY16",
+    "Official GLD closing price and ounces/share"
+  ]
+}

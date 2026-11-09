@@ -1,0 +1,4 @@
+﻿floor_bps,n_quarters,status,beta_per_year,beta_lo,beta_hi,annual_change_fraction,p_value_exploratory
+0.5,24,exploratory_association,-0.08657130034,-0.2469918326,0.07384923196,-0.08292984096,0.2901927079
+1,24,exploratory_association,-0.08657130034,-0.2469918326,0.07384923196,-0.08292984096,0.2901927079
+2,24,exploratory_association,-0.08657130034,-0.2469918326,0.07384923196,-0.08292984096,0.2901927079

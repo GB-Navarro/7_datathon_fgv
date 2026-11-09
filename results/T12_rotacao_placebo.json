@@ -1,0 +1,20 @@
+{
+  "regra": "faixa fixa ±19 bps, lag 1 pregão, cenário intermediário",
+  "ganho_anual_bps": 129.90122596899866,
+  "placebo_media_bps": -76.23875763170491,
+  "placebo_p95_bps": -3.3457802839751025,
+  "fracao_placebos_acima": 0.0,
+  "simulacoes": 1000,
+  "ganho_por_ano_calendario_bps": {
+    "2020": 0.0,
+    "2021": 0.0,
+    "2022": 93.34115760319915,
+    "2023": 166.17231697686705,
+    "2024": 375.22860847784654,
+    "2025": 126.91229384549598,
+    "2026": 42.47066598750418
+  },
+  "dias_uteis": 1552,
+  "inicio": "2020-08-28",
+  "fim": "2026-11-06"
+}

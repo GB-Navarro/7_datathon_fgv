@@ -1,0 +1,17 @@
+{
+  "modelo": "nível local (passeio aleatório) + componente AR(1) + ruído; dias úteis, média 15-20 UTC",
+  "phi_ar1": 0.8345041807493505,
+  "meia_vida_transitorio_pregoes": 3.831288188915063,
+  "dp_choque_nivel_bps_dia": 3.458072407662352,
+  "dp_choque_nivel_bps_ano": 54.895197637973716,
+  "dp_choque_ar_bps": 21.293917041807696,
+  "dp_ruido_bps": 18.068998401560158,
+  "parametros": {
+    "sigma2.irregular": 326.48870323558356,
+    "sigma2.level": 11.958264776635696,
+    "sigma2.ar": 453.4309029833882,
+    "ar.L1": 0.8345041807493505
+  },
+  "loglik": -7529.011074453316,
+  "n": 1552
+}

@@ -1,0 +1,40 @@
+{
+  "verification_date": "2026-11-08",
+  "command": "python run_all.py --all --offline",
+  "exit_code": 0,
+  "completed_stages": [
+    "fetch_base",
+    "build_panels",
+    "minutes",
+    "analysis",
+    "figures_pdf",
+    "tests",
+    "package"
+  ],
+  "unit_tests_passed": 33,
+  "integrity_checks_passed": 23,
+  "numeric_hashes_identical": true,
+  "scope": "Four core numerical CSV tables compared before and after the complete cached recomputation. PDF captions are subsequently re-exported without analytical changes.",
+  "tables": [
+    {
+      "file": "results/T1_fidelidade.csv",
+      "sha256_before": "69094eb50d07f67922e89f3cf4c8422e396190f01de85258e13d1bbdfededea6",
+      "sha256_after": "69094eb50d07f67922e89f3cf4c8422e396190f01de85258e13d1bbdfededea6"
+    },
+    {
+      "file": "results/T3_baseline.csv",
+      "sha256_before": "be0279405bba85ca0c36abcb42817c1367e75b5940dfb9feefe8d11681650b24",
+      "sha256_after": "be0279405bba85ca0c36abcb42817c1367e75b5940dfb9feefe8d11681650b24"
+    },
+    {
+      "file": "results/T4_trend.csv",
+      "sha256_before": "e4d805d660b7b2b4d39a91357109bf3d8705adf765798f671197c6219d3f2eae",
+      "sha256_after": "e4d805d660b7b2b4d39a91357109bf3d8705adf765798f671197c6219d3f2eae"
+    },
+    {
+      "file": "results/T5_sensibilidade.csv",
+      "sha256_before": "7423ee2fba62c568f09a53b9bf46c26eac6eddd5e52b2de2015c7e002aeec58c",
+      "sha256_after": "7423ee2fba62c568f09a53b9bf46c26eac6eddd5e52b2de2015c7e002aeec58c"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+﻿need,evidence,condition,limit
+Negociar fora do horário da referência,PAXG negocia continuamente; verificar volume e spread no venue,Acesso ao venue e risco de preço aceito,negociação contínua não garante preço de execução
+Exposição ao ouro em horário comum,Mediana absoluta observada: 36.38 bps log,Referência e moeda compatíveis,não demonstra reserva de valor secular
+Menor custo de manutenção,Cruzamento de custo-base: GLD 9.3 meses; GLDM 37.2 meses,"USD, antes de impostos, custos de token supostos",custo menor não implica risco menor
+Capturar convergência,44 operações avaliadas na hipótese-base,"short, margem, financiamento e liquidez precisam ser verificados",simulação condicional; sem arbitragem executável comprovada

@@ -1,0 +1,5 @@
+﻿sample,block_weeks,n_weeks,ci_status,median_abs_bps_lo,median_abs_bps_hi,p95_abs_bps_lo,p95_abs_bps_hi,above_50_fraction_lo,above_50_fraction_hi
+common_hours,2,324,exploratory_circular_weekly_blocks,32.38900435,41.15539732,107.6642722,134.6844999,0.3062363031,0.4127749414
+reopen,2,301,exploratory_circular_weekly_blocks,39.56726325,56.62936027,133.0799907,225.1716202,0.4194630872,0.5476249411
+common_hours,8,324,exploratory_circular_weekly_blocks,29.45826667,44.26437783,102.3658297,138.2568321,0.2654184453,0.4433994546
+reopen,8,301,exploratory_circular_weekly_blocks,37.0770407,62.53820906,132.2898476,227.2525927,0.3918772033,0.5770559405

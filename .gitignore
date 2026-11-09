@@ -1,0 +1,8 @@
+data/raw/
+data/interim/
+data/panel/
+.venv/
+__pycache__/
+.pytest_cache/
+.env
+.dukascopy-cache/

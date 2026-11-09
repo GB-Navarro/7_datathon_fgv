@@ -1,0 +1,4 @@
+﻿scenario,method,valid_joint_paths,calendar_weeks,basis_scale,variable_cost_scale,volume_scale,storage_bps_year,assumptions_not_causal_effects,median_abs_bps,p95_abs_bps,mean_trade_model_before_unknown_carry_bps,modeled_positive_fraction,hypothetical_median_capacity_usd
+baseline,deterministic_sensitivity_insufficient_joint_paths,55,104,1,1,1,0,True,35.45393764,129.6551759,-40.01253853,0,41162.21932
+lower_friction,deterministic_sensitivity_insufficient_joint_paths,55,104,1,0.5,1,0,True,35.45393764,129.6551759,-17.74307729,0.1363636364,41162.21932
+stress,deterministic_sensitivity_insufficient_joint_paths,55,104,2,2,0.5,20,True,70.90787527,259.3103518,-84.06037847,0,20581.10966

@@ -1,0 +1,10 @@
+﻿parameter,factor,scenario,interpretation
+basis_scale,1,baseline,assumed_not_estimated
+variable_cost_scale,1,baseline,assumed_not_estimated
+volume_scale,1,baseline,assumed_not_estimated
+basis_scale,1,lower_friction,assumed_not_estimated
+variable_cost_scale,0.5,lower_friction,assumed_not_estimated
+volume_scale,1,lower_friction,assumed_not_estimated
+basis_scale,2,stress,assumed_not_estimated
+variable_cost_scale,2,stress,assumed_not_estimated
+volume_scale,0.5,stress,assumed_not_estimated

@@ -1,0 +1,94 @@
+{
+  "F0_cobertura.png": {
+    "source_files": [
+      "results/coverage.csv"
+    ],
+    "sha256": "3c253c57351fe03fd93462fcbe865a10a8f54f06b8c1c779c58f0c067310354b",
+    "config_hash": "7143534efc352009e93f880779ae1a1fa11293a51ab7208d3786b92b81b9e130"
+  },
+  "F1_fidelidade.png": {
+    "source_files": [
+      "results/T4_evolucao.csv"
+    ],
+    "sha256": "4966bf8794faf631f39468f5a04d9ee96e2952c9a93db665824159c963bf4c41",
+    "config_hash": "7143534efc352009e93f880779ae1a1fa11293a51ab7208d3786b92b81b9e130"
+  },
+  "F2_reabertura.png": {
+    "source_files": [
+      "results/T2_hourly_paired.csv"
+    ],
+    "sha256": "7094675ece68185f72f675ced636a51d240564f4bc36b0f7b5b66d6d26a6025a",
+    "config_hash": "7143534efc352009e93f880779ae1a1fa11293a51ab7208d3786b92b81b9e130"
+  },
+  "F3_convergencia_custos.png": {
+    "source_files": [
+      "results/T2_convergencia.csv",
+      "config/params.json"
+    ],
+    "sha256": "a9fc325fc47fc4a0b43df70df3798eb999dea6e9eaebe1124abf8b5611f721bd",
+    "config_hash": "7143534efc352009e93f880779ae1a1fa11293a51ab7208d3786b92b81b9e130"
+  },
+  "F4_token_gld_gldm.png": {
+    "source_files": [
+      "results/T3_baseline.csv"
+    ],
+    "sha256": "1f1a8bde1defe7819e3dd587119099e4b3d0eef3b6942c34a5a7cca960568237",
+    "config_hash": "7143534efc352009e93f880779ae1a1fa11293a51ab7208d3786b92b81b9e130"
+  },
+  "F5_sensibilidade.png": {
+    "source_files": [
+      "results/T5_sensibilidade.csv",
+      "config/params.json"
+    ],
+    "sha256": "efbcf5de8691688ba7b03573147ec4034263c6fa4dd1fba4e9fb6a43500c785e",
+    "config_hash": "7143534efc352009e93f880779ae1a1fa11293a51ab7208d3786b92b81b9e130"
+  },
+  "F6_riscos.png": {
+    "source_files": [
+      "results/T_riscos.csv",
+      "results/T1_worst_weekends.csv"
+    ],
+    "sha256": "aa5a3725cd3a43bcbb48e90bde52cc2a133f952e602d8cabcb7f5e1cd83b25a5",
+    "config_hash": "7143534efc352009e93f880779ae1a1fa11293a51ab7208d3786b92b81b9e130"
+  },
+  "figures_refined/V0_calendario.svg": {
+    "source_files": [
+      "config/params.json"
+    ],
+    "sha256": "86ca82df85ef24b06962f176fc109e8974414d44947d8ca7554f660544e3835f",
+    "config_hash": "7143534efc352009e93f880779ae1a1fa11293a51ab7208d3786b92b81b9e130",
+    "refinement_config_hash": "953bd21eef2b023f44384d10c6707869c3cb58c39e0f232e48c7c2589502050f"
+  },
+  "figures_refined/V1_fidelidade.svg": {
+    "source_files": [
+      "results/T1_fidelidade.csv"
+    ],
+    "sha256": "345b82e86273fbf1f572ae1ff474bd9ca6b39755079f3aeec9388247162a4b4f",
+    "config_hash": "7143534efc352009e93f880779ae1a1fa11293a51ab7208d3786b92b81b9e130",
+    "refinement_config_hash": "953bd21eef2b023f44384d10c6707869c3cb58c39e0f232e48c7c2589502050f"
+  },
+  "figures_refined/V2_modelo.svg": {
+    "source_files": [
+      "results/T8_forecast_summary.csv"
+    ],
+    "sha256": "52f1d6532f80aa0d514b43ffaad17f762f9d3f994519f4cbcd216919bb28803e",
+    "config_hash": "7143534efc352009e93f880779ae1a1fa11293a51ab7208d3786b92b81b9e130",
+    "refinement_config_hash": "953bd21eef2b023f44384d10c6707869c3cb58c39e0f232e48c7c2589502050f"
+  },
+  "figures_refined/V3_custos.svg": {
+    "source_files": [
+      "results/T2_baseline_inference.csv"
+    ],
+    "sha256": "2fb534a819842f15cf37c5bfb4760286c982d4eaacfdb2230a8c48ddf8a7c6a6",
+    "config_hash": "7143534efc352009e93f880779ae1a1fa11293a51ab7208d3786b92b81b9e130",
+    "refinement_config_hash": "953bd21eef2b023f44384d10c6707869c3cb58c39e0f232e48c7c2589502050f"
+  },
+  "figures_refined/V4_horizontes.svg": {
+    "source_files": [
+      "results/T3_baseline.csv"
+    ],
+    "sha256": "20b6aa5172a8357772d264b5b5e8235010e6a9e8500558d381bdd41e3315ec63",
+    "config_hash": "7143534efc352009e93f880779ae1a1fa11293a51ab7208d3786b92b81b9e130",
+    "refinement_config_hash": "953bd21eef2b023f44384d10c6707869c3cb58c39e0f232e48c7c2589502050f"
+  }
+}

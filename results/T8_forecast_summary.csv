@@ -1,0 +1,6 @@
+﻿model,n_test,mae_bps,rmse_bps,mae_skill_vs_persistence,mae_difference_vs_persistence,difference_lo,difference_hi,first_test_week,last_test_week,ci_status,economic_profit_claim
+persistence,204,16.45669323,24.64206042,-2.220446049e-16,0,0,0,2022-08-28 00:00:00+00:00,2026-11-01 00:00:00+00:00,exploratory_calendar_week_blocks,False
+zero_basis,204,51.78620769,68.32894765,-2.146817344,35.32951445,27.60711365,43.70217982,2022-08-28 00:00:00+00:00,2026-11-01 00:00:00+00:00,exploratory_calendar_week_blocks,False
+historical_mean,204,56.37385097,74.29231505,-2.425588007,39.91715774,30.55002683,50.06653329,2022-08-28 00:00:00+00:00,2026-11-01 00:00:00+00:00,exploratory_calendar_week_blocks,False
+linear_adjustment,204,17.72178343,26.05048215,-0.07687390015,1.265090192,-0.3508222326,3.014158387,2022-08-28 00:00:00+00:00,2026-11-01 00:00:00+00:00,exploratory_calendar_week_blocks,False
+linear_adjustment_context,204,18.20888387,26.43884746,-0.1064728263,1.75219064,-0.01858184805,3.568369473,2022-08-28 00:00:00+00:00,2026-11-01 00:00:00+00:00,exploratory_calendar_week_blocks,False

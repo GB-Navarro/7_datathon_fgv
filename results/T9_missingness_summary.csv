@@ -1,0 +1,4 @@
+﻿horizon_hours,evaluated_trades,unassessed_signals,observed_mean_model_bps,required_unassessed_mean_to_break_even_bps,scope
+1,49,11,-43.40384569,193.3444035,only_observed_eligible_signals_not_weeks_with_missing_signal
+6,44,16,-40.01253853,110.0344809,only_observed_eligible_signals_not_weeks_with_missing_signal
+24,48,12,-36.9751638,147.9006552,only_observed_eligible_signals_not_weeks_with_missing_signal

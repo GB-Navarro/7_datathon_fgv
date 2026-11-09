@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "<string>", line 4, in <module>
+  File "C:\Users\gsilv\Brain V2\Challenges\datathon_fgv_2026_final\src\v2_onchain.py", line 54, in fetch
+    raise RuntimeError(f'falha em {side} {a}-{z}')
+RuntimeError: falha em mint 16000000-16001953

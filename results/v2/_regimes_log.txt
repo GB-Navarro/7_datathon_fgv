@@ -1,0 +1,9 @@
+                           config cenario_custos  lag_pregoes  ciclos  ciclos_positivos  ganho_anual_vs_gldm_bps  ic90_lo  ic90_hi  razao_informacao  pior_queda_bps
+0          regimes (HMM filtrado)  intermediario            1       7              0.86                   118.39    -0.60   251.07              0.53         -298.44
+1  faixa fixa ±19 (mesmo período)  intermediario            1      25              0.76                   192.29    95.24   299.50              0.94         -298.44
+2          regimes (HMM filtrado)  intermediario            2       7              0.86                    49.17   -36.38   133.10              0.24         -333.12
+3  faixa fixa ±19 (mesmo período)  intermediario            2      24              0.67                   152.99    42.44   268.98              0.74         -298.44
+4          regimes (HMM filtrado)       original            1       7              0.71                    83.95   -24.99   203.53              0.38         -298.44
+5  faixa fixa ±37 (mesmo período)       original            1      13              0.92                   147.58    37.40   260.66              0.74         -298.44
+6          regimes (HMM filtrado)       original            2       7              0.57                    14.72   -69.12    95.15              0.07         -351.12
+7  faixa fixa ±37 (mesmo período)       original            2      13              0.77                    98.96    14.70   183.33              0.54         -303.94

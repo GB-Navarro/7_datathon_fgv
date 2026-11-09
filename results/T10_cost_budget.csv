@@ -1,0 +1,4 @@
+﻿horizon_hours,n,mean_gross_bps,gross_lo,gross_hi,mean_modeled_cost_bps,mean_model_bps,accounting_cost_reduction_to_zero_fraction,scope
+1,49,1.196687175,-1.023852613,3.203953813,44.60053287,-43.40384569,0.9731687696,sample_mean_cost_budget_not_forecast_or_realizable_return
+6,44,4.526334654,-0.741576499,10.04232736,44.53887318,-40.01253853,0.8983733909,sample_mean_cost_budget_not_forecast_or_realizable_return
+24,48,7.846216278,2.747498704,13.55944962,44.82138008,-36.9751638,0.8249447861,sample_mean_cost_budget_not_forecast_or_realizable_return

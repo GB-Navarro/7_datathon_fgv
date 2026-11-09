@@ -1,0 +1,17 @@
+{
+  "premio_fds_media_bps": 14.153535751320492,
+  "premio_fds_media_ep": 3.5939600155406715,
+  "premio_fds_mediana_bps": 6.112219584842734,
+  "premio_fds_mediana_ic90": [
+    1.8921997335144223,
+    10.906081431425875
+  ],
+  "fracao_positiva": 0.5647840531561462,
+  "variacao_media_ate_1h_bps": 9.798127859405165,
+  "variacao_media_ate_7h_bps": 7.041141266674769,
+  "desvio_padrao_gap_ouro_bps": 33.72412380943114,
+  "desvio_padrao_mov_paxg_bps": 67.72375349860864,
+  "r2_reabertura_em_sexta": 0.5447853595767648,
+  "r2_7h_em_sexta": 0.6399345979439294,
+  "mesmo_sinal_sexta_reabertura": 0.8338870431893688
+}

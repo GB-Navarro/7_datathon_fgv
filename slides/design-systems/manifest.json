@@ -1,0 +1,364 @@
+{
+  "files": [
+    {
+      "path": "01-aureo.html",
+      "bytes": 25800,
+      "sha256": "342eeaf37718d97a22d8e4cf10fbdc28a1307ee00f187a5033921c8f97eca5c5"
+    },
+    {
+      "path": "02-vertice.html",
+      "bytes": 29704,
+      "sha256": "593ae7b3e60ad3cf87e6dd5705f14d2f314c1579210121501e0602748254f214"
+    },
+    {
+      "path": "03-meridiano.html",
+      "bytes": 28581,
+      "sha256": "ac4929920fb72634657eea4224b02ac6140e3b3a61bbfe22bdbf014e31fefe4a"
+    },
+    {
+      "path": "assets/aureo-symbol.svg",
+      "bytes": 313,
+      "sha256": "a08025bcca8bf9a82888f1c94c2953be29905f305ad4caca44701092d527edd8"
+    },
+    {
+      "path": "assets/aureo.css",
+      "bytes": 13210,
+      "sha256": "b8ce26767d7a547839f014ac4420abd13fbe82a536fbfdb38f7596ede0973c44"
+    },
+    {
+      "path": "assets/fonts/DMSerifDisplay-Italic.ttf",
+      "bytes": 71208,
+      "sha256": "df74c0ac387baeaeb0fe4f2324e1668e6a3ed8c09cd9796fe162c71753e19e45"
+    },
+    {
+      "path": "assets/fonts/DMSerifDisplay-Regular.ttf",
+      "bytes": 76580,
+      "sha256": "8cc3643535edf039aa5d95440a8542735e9197e4f4b8d9303e980fefbf5ab616"
+    },
+    {
+      "path": "assets/fonts/IBMPlexMono-Regular.ttf",
+      "bytes": 135580,
+      "sha256": "6a3412f058c7d8dfd9170c41e85ade48e5156ecb89356110ca57a0a27734af46"
+    },
+    {
+      "path": "assets/fonts/InstrumentSerif-Italic.ttf",
+      "bytes": 71592,
+      "sha256": "08939b8bdf534afec24ae0ef5e03f948940cd9a8fe08e7fecbad040e62327385"
+    },
+    {
+      "path": "assets/fonts/InstrumentSerif-Regular.ttf",
+      "bytes": 70012,
+      "sha256": "498efd461f6ddfcb7a111bf9a565709d2085d48201d501ead960d93e84ffbb88"
+    },
+    {
+      "path": "assets/fonts/Manrope.ttf",
+      "bytes": 164700,
+      "sha256": "3ae11c49db0455a3cc33e37d380f20fdb8c7f8b41dc07625c177e3d87a9d6ae6"
+    },
+    {
+      "path": "assets/fonts/OFL-dmserifdisplay.txt",
+      "bytes": 4605,
+      "sha256": "a3e5cdd67d4571dd0a24fcc968de0efde7ae97ef752daf0906e4767619dd7231"
+    },
+    {
+      "path": "assets/fonts/OFL-ibmplexmono.txt",
+      "bytes": 4456,
+      "sha256": "7e6b2818edbd8f6a01ae80641cc8f16a51080d08fb4e532be3a0b6f74adb07da"
+    },
+    {
+      "path": "assets/fonts/OFL-instrumentserif.txt",
+      "bytes": 4405,
+      "sha256": "129ed7618959716959f2941fdd5b49e0ad6e6c1d78726761786a00253d865521"
+    },
+    {
+      "path": "assets/fonts/OFL-manrope.txt",
+      "bytes": 4387,
+      "sha256": "58172e0c0fac2cda8a37b348164bb55e44b0e69051e557e92b1d3f6910141f7b"
+    },
+    {
+      "path": "assets/fonts/OFL-spacegrotesk.txt",
+      "bytes": 4495,
+      "sha256": "564ce565c371c5e5bbf286006565a7c9aa55a9f56e7ca58d56e05d649dd61a72"
+    },
+    {
+      "path": "assets/fonts/SpaceGrotesk.ttf",
+      "bytes": 136676,
+      "sha256": "acad6de1fc93436f5c0f1f4137751ef04f1aea3063e7036535970ffcfbd79f72"
+    },
+    {
+      "path": "assets/meridiano-symbol.svg",
+      "bytes": 433,
+      "sha256": "11f7323e5590f5929b2ed9864003a956b29c05df22a16296f5f5b8c5f31d1961"
+    },
+    {
+      "path": "assets/meridiano.css",
+      "bytes": 10055,
+      "sha256": "cdefd38b98438aa48e3304ed7d7612e815046cc29ca29fe0914c2122c1fbbcc4"
+    },
+    {
+      "path": "assets/presentation.css",
+      "bytes": 10514,
+      "sha256": "b770ec01340ffaa7cba4e0224cbfbc5c2a85c20d0d35fb22c691f20c49109060"
+    },
+    {
+      "path": "assets/presentation.js",
+      "bytes": 4736,
+      "sha256": "199f64810cdad6a180f8c5f0c2dbc24ab6ff4e56251f6d70efebef58d330755c"
+    },
+    {
+      "path": "assets/vertice-symbol.svg",
+      "bytes": 418,
+      "sha256": "e2dc01e1edc620be08cdca0b1f2845b88e6556fdce0bc09ad90a6fb6e1bd03aa"
+    },
+    {
+      "path": "assets/vertice.css",
+      "bytes": 9524,
+      "sha256": "c41b643e84b769318328738b6cc9d9a246dceed92e92dfdfc11a34d03e7045b2"
+    },
+    {
+      "path": "AUREO.md",
+      "bytes": 3961,
+      "sha256": "1a715a5e513ce2be7587106559474d1861b3958f8e46faad5921059eb814fcd5"
+    },
+    {
+      "path": "aureo_direction.py",
+      "bytes": 12227,
+      "sha256": "4d5654f28918b62df3dfedf6d1bd95706342287522d811f354784939ab928e14"
+    },
+    {
+      "path": "build.py",
+      "bytes": 32329,
+      "sha256": "fca617a50a9ce6f8a08bf6efd691cc7d78f6cecaf0cb2b3a7e10aea5ad9b9f26"
+    },
+    {
+      "path": "check_design.py",
+      "bytes": 9297,
+      "sha256": "58f5aaa9b0082346d40755ae653b66b15cf6036d21f9d98b63a360f07f1fcffb"
+    },
+    {
+      "path": "index.html",
+      "bytes": 12595,
+      "sha256": "c61ee4810e1268b98c6ebd004ec30bf41e09473b6019c6e1c4cff6d987a8b426"
+    },
+    {
+      "path": "make_previews.py",
+      "bytes": 1781,
+      "sha256": "85e01cf0a07dbfa5d63f28e99091444a86b575b57d7aa466bd9807a5933361a9"
+    },
+    {
+      "path": "PLANO.md",
+      "bytes": 6644,
+      "sha256": "ef08440009682e306a892975d46f3a3e1e450af3613d9e6d3d798560687146f3"
+    },
+    {
+      "path": "previews/aureo-01.png",
+      "bytes": 69230,
+      "sha256": "f223c87be9841e73c97e04e123f7dd8d9db972f031b0a28c11fb821dfb2227ae"
+    },
+    {
+      "path": "previews/aureo-02.png",
+      "bytes": 70057,
+      "sha256": "9a0f539cb50861890b1774a846c1af4a9ff6fc10c7e05469a9d1121b2f15886d"
+    },
+    {
+      "path": "previews/aureo-03.png",
+      "bytes": 83015,
+      "sha256": "33a55d73d691902617cf0cd6add2d37f5748ab265331230bb57f1ea3359c3d5b"
+    },
+    {
+      "path": "previews/aureo-04.png",
+      "bytes": 90096,
+      "sha256": "5caa51fd557463c52a79ba57a2b47324c9cc113a835e59cd5d6ae7a6a340aea1"
+    },
+    {
+      "path": "previews/aureo-05.png",
+      "bytes": 68953,
+      "sha256": "70a6c92ec0be5411d4d8af2e0726e83ea8a4eb02cdac31b06ba29645da603cd2"
+    },
+    {
+      "path": "previews/aureo-06.png",
+      "bytes": 78905,
+      "sha256": "0ece7a04dbbba64869fda7caa4f8a4db414d18b7560287cf79e808778684fb2a"
+    },
+    {
+      "path": "previews/aureo-07.png",
+      "bytes": 75610,
+      "sha256": "580ad9fcd6ef578b2ebaf5dc5e3d75e81f4beb5627102a1ccd3d2970b964fba4"
+    },
+    {
+      "path": "previews/aureo-08.png",
+      "bytes": 68572,
+      "sha256": "be1c375295f0acfaa7be170c84d260807f90136647b72f930ba89f7910d83a16"
+    },
+    {
+      "path": "previews/aureo-antes-depois.png",
+      "bytes": 133482,
+      "sha256": "49491d5c8f7d07ef049b22eaa5b7f120e2baa62ca0b199b846e64d596f13446e"
+    },
+    {
+      "path": "previews/aureo-cover.png",
+      "bytes": 69230,
+      "sha256": "f223c87be9841e73c97e04e123f7dd8d9db972f031b0a28c11fb821dfb2227ae"
+    },
+    {
+      "path": "previews/aureo-prancha.png",
+      "bytes": 540586,
+      "sha256": "482e71ba384a8b74a538887457e45c94a11d6fd4312d870e8d1aa5f0f7b3545a"
+    },
+    {
+      "path": "previews/aureo-v1-cover.png",
+      "bytes": 79580,
+      "sha256": "af19a711a0d17367303491a3993932c3a871847a10801bf9dccf9bd175d3caca"
+    },
+    {
+      "path": "previews/aureo-v1-prancha.png",
+      "bytes": 592335,
+      "sha256": "efcb8599e02ff53281238f3ec8fa176c11e67ad24a9befab05e92fd1fc0ddd7e"
+    },
+    {
+      "path": "previews/aureo.pdf",
+      "bytes": 381754,
+      "sha256": "ce3fde3bcfd3221464c810b111e231b971b8192fd1879597c538d4437c81a100"
+    },
+    {
+      "path": "previews/biblioteca.png",
+      "bytes": 225504,
+      "sha256": "60a69c31c5242c25ca6899c059ef544a36acc5fd45326baf890e266a00fdc824"
+    },
+    {
+      "path": "previews/comparativo.png",
+      "bytes": 527439,
+      "sha256": "eb17e496ffc57a4da222945546ec56c9a6574ccc613a4e55b9b7e0fe7cc554d3"
+    },
+    {
+      "path": "previews/meridiano-01.png",
+      "bytes": 92026,
+      "sha256": "80d7d6026b966b4d5c59c96bca75dc122fd569b5e4ad072a3a4cd6bb9236fff1"
+    },
+    {
+      "path": "previews/meridiano-02.png",
+      "bytes": 70437,
+      "sha256": "2413278628b0ac9ba942b65ae0c0d08a58ad901335cf90d5cc6cd363d72a9f92"
+    },
+    {
+      "path": "previews/meridiano-03.png",
+      "bytes": 86144,
+      "sha256": "83fca1f6cc462fc244c33f17a3c011df37351c6a38af81a8cf63de88f103409c"
+    },
+    {
+      "path": "previews/meridiano-04.png",
+      "bytes": 67936,
+      "sha256": "d36af08584c72fa9ee4693ad4f31bab0ab170912268a57c9401f6050a56ae7d6"
+    },
+    {
+      "path": "previews/meridiano-05.png",
+      "bytes": 67157,
+      "sha256": "e35e89a3b7cb1f55a2954db932d39154a335f38d88168e679cbd26cb753cc568"
+    },
+    {
+      "path": "previews/meridiano-06.png",
+      "bytes": 77443,
+      "sha256": "c5d7f90275e1a857e6620c15453f56619b794435c690940d7154204960caece0"
+    },
+    {
+      "path": "previews/meridiano-07.png",
+      "bytes": 68305,
+      "sha256": "1b71eef82bba6c447f91756e7ad2c56d4af4a10eb809f473bed0132c094a72f8"
+    },
+    {
+      "path": "previews/meridiano-08.png",
+      "bytes": 87384,
+      "sha256": "2b58f9e59df46c65254180643d72b8104e10c0a54dd63206a76db6e1b1c130b0"
+    },
+    {
+      "path": "previews/meridiano-cover.png",
+      "bytes": 92026,
+      "sha256": "80d7d6026b966b4d5c59c96bca75dc122fd569b5e4ad072a3a4cd6bb9236fff1"
+    },
+    {
+      "path": "previews/meridiano-prancha.png",
+      "bytes": 566167,
+      "sha256": "bae8b044e27c02aca2c3930d19c48c0fdede9b20c8e04f4bdfed38b36836f6c0"
+    },
+    {
+      "path": "previews/meridiano.pdf",
+      "bytes": 454918,
+      "sha256": "2e48ad7985945ef2fb508908f79e7a1cee2a82dcc28535cbc3cbed1dd90c0de6"
+    },
+    {
+      "path": "previews/vertice-01.png",
+      "bytes": 82333,
+      "sha256": "cf88fa4f9f5a3fd73e30eda5fe0288a65ebc0db724f1a128b72bf59f648248c8"
+    },
+    {
+      "path": "previews/vertice-02.png",
+      "bytes": 61356,
+      "sha256": "fc01f1cc5ac6c665a0ce3203e783aae0b1fb47094ae3f70c30a16bb2d10e2334"
+    },
+    {
+      "path": "previews/vertice-03.png",
+      "bytes": 87423,
+      "sha256": "a7f0da4ccee82fe0f0af8a5581e78b3d31030291812d01cf91ce1ef83afe9371"
+    },
+    {
+      "path": "previews/vertice-04.png",
+      "bytes": 75703,
+      "sha256": "9ea3f4651b368473126f1c2e7e417e9af1ab88edf1e1a9273f2926b865cb05e2"
+    },
+    {
+      "path": "previews/vertice-05.png",
+      "bytes": 56980,
+      "sha256": "320e3addf00ec06363b0896358f97326b5cc315c78b2c7c7a84bbfdedc853d59"
+    },
+    {
+      "path": "previews/vertice-06.png",
+      "bytes": 61715,
+      "sha256": "8f444f1ca0c983981d452310402a348e527c97c6a296633cae24988be5e5d233"
+    },
+    {
+      "path": "previews/vertice-07.png",
+      "bytes": 64625,
+      "sha256": "b29cc1456645dc98d2b47dd8c0d74fd1dc85938471fcf20fda576dd72a0c8558"
+    },
+    {
+      "path": "previews/vertice-08.png",
+      "bytes": 73257,
+      "sha256": "43479408e33b482aec9691afbc78268cb3d655a11e4fa0cf97a14099372a0bee"
+    },
+    {
+      "path": "previews/vertice-cover.png",
+      "bytes": 82333,
+      "sha256": "cf88fa4f9f5a3fd73e30eda5fe0288a65ebc0db724f1a128b72bf59f648248c8"
+    },
+    {
+      "path": "previews/vertice-prancha.png",
+      "bytes": 542350,
+      "sha256": "2177b1f2a5c4db0f469eb25ff4b81c98d0d8176b43ce82c36b4092c126518333"
+    },
+    {
+      "path": "previews/vertice.pdf",
+      "bytes": 522685,
+      "sha256": "beecfa4c0f6953f5285c0561c6fc0f634efe8594bf3e5c55016d5befeed5b841"
+    },
+    {
+      "path": "QA_design.json",
+      "bytes": 8479,
+      "sha256": "64821d1573bc252c895a596be83ceb8d83d2d9be0497fe06a6a1462512f982b6"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3248,
+      "sha256": "576d731c16d4ab2f254af75f26976ae68755d45cb58e20e2e9bacdb3ff972f2e"
+    },
+    {
+      "path": "requirements-design.txt",
+      "bytes": 136,
+      "sha256": "23c63d5800de0690b1e690104ddb5b33fae80bdb153bd130ee1d7ea0466f67d1"
+    },
+    {
+      "path": "tokens.json",
+      "bytes": 1608,
+      "sha256": "ef93faa5873521f54c979e23222f6700d718564c0cca53dc354548ebaa9f952d"
+    }
+  ]
+}

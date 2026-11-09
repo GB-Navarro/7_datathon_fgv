@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="plot" viewBox="0 0 650 270" role="img" aria-label="Esquema sem escala temporal: o token negocia continuamente; a referência de ouro fecha no fim de semana.">
+    <text class="minor" x="52" y="30">Sexta / fechamento</text><text class="minor" x="316" y="30" text-anchor="middle">Fim de semana</text><text class="minor" x="595" y="30" text-anchor="end">Domingo / reabertura</text>
+    <rect x="192" y="55" width="255" height="152" fill="var(--light-gold)" opacity=".06"/>
+    <path d="M192 49v165M447 49v165" stroke="var(--light-gold)" stroke-width="1" stroke-dasharray="3 5"/>
+    <text class="plot-label" x="52" y="88">PAXG</text><path d="M52 111H595" fill="none" stroke="var(--light-ref)" stroke-width="2"/>
+    <circle cx="52" cy="111" r="4" fill="var(--light-ref)"/><circle cx="595" cy="111" r="4" fill="var(--light-ref)"/>
+    <text class="plot-label" x="52" y="166">XAUUSD</text><path d="M52 188H192M447 188H595" fill="none" stroke="var(--light-gold)" stroke-width="2"/>
+    <text class="minor" x="319" y="192" text-anchor="middle">referência fechada</text><circle cx="447" cy="188" r="5" fill="var(--light-gold)"/>
+    <text class="tick" x="52" y="255">Esquema de calendário, sem escala temporal.</text></svg>

@@ -1,0 +1,91 @@
+{
+  "frozen_at_utc": "2026-11-08T19:04:57.274955+00:00",
+  "config_hash": "953bd21eef2b023f44384d10c6707869c3cb58c39e0f232e48c7c2589502050f",
+  "config": {
+    "version": "3.0",
+    "research_status": "retrospective_extension_after_original_results",
+    "purpose": "Improve identification, temporal prediction and sensitivity without selecting profitable parameters.",
+    "baseline_config_hash": "7143534efc352009e93f880779ae1a1fa11293a51ab7208d3786b92b81b9e130",
+    "bootstrap": {
+      "replicates": 2000,
+      "block_calendar_weeks": 4,
+      "seed": 20261108,
+      "confidence_level": 0.95
+    },
+    "paired": {
+      "comparisons": [
+        [
+          "b_c",
+          "b_0"
+        ],
+        [
+          "b_0",
+          "b_1h"
+        ],
+        [
+          "b_0",
+          "b_7h"
+        ]
+      ],
+      "primary_statistic": "mean_of_within_week_absolute_basis_change",
+      "inference": "exploratory_calendar_block_bootstrap_not_causal"
+    },
+    "forecast": {
+      "target": "b_7h",
+      "decision_point": "t_0_plus_1h_completed_prices",
+      "initial_training_calendar_weeks": 104,
+      "minimum_training_observations": 78,
+      "models": [
+        "persistence",
+        "zero_basis",
+        "historical_mean",
+        "linear_adjustment",
+        "linear_adjustment_context"
+      ],
+      "linear_features": [
+        "b_1h"
+      ],
+      "context_features": [
+        "b_1h",
+        "g",
+        "log_prior_gold_vol"
+      ],
+      "prior_volatility_calendar_days": 7,
+      "minimum_prior_volatility_returns": 48,
+      "primary_loss": "mean_absolute_error_bps",
+      "hyperparameter_search": false,
+      "claim": "chronological_retrospective_forecast_not_trading_profit_or_causality"
+    },
+    "currency_age_sensitivity": {
+      "max_age_minutes": [
+        1,
+        5
+      ],
+      "direction": "backward_completed_fx_only",
+      "gold_and_token_execution": "exact_minute_open_with_activity",
+      "source": "existing_observed_fx_minutes",
+      "replaces_primary": false,
+      "enables_annual_simulation": false
+    },
+    "missingness": {
+      "assumed_unassessed_mean_bps": [
+        -200,
+        -100,
+        -50,
+        0,
+        50,
+        100,
+        200
+      ],
+      "imputations_are_hypotheses": true
+    },
+    "presentation": {
+      "design": "aureo-v2",
+      "main_slides": 10,
+      "appendix_slides": 3,
+      "format": "16:9",
+      "scientific_content_only": true
+    }
+  },
+  "note": "Extensão retrospectiva posterior aos resultados v2; não é pré-registro independente."
+}

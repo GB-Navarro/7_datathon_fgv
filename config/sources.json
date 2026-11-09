@@ -1,0 +1,16 @@
+{
+  "binance_archive": "https://data.binance.vision/",
+  "binance_documentation": "https://github.com/binance/binance-public-data",
+  "bitfinex_api": "https://api-pub.bitfinex.com/v2/",
+  "bitfinex_documentation": "https://docs.bitfinex.com/reference/rest-public-candles",
+  "coinbase_api": "https://api.exchange.coinbase.com/",
+  "coinbase_documentation": "https://docs.cdp.coinbase.com/api-reference/exchange-api/rest-api/products/get-product-candles",
+  "dukascopy_package_version": "1.51.1",
+  "dukascopy_documentation": "https://github.com/Leo4815162342/dukascopy-node",
+  "gold_trading_hours": "https://www.dukascopy.com/europe/english/forex/forex_trading_accounts/link/",
+  "gld": "https://www.ssga.com/us/en/individual/etfs/spdr-gold-shares-gld",
+  "gldm": "https://www.ssga.com/us/en/individual/etfs/spdr-gold-minishares-gldm",
+  "etf_archive": "https://api.spdrgoldshares.com/api/v1/historical-archive",
+  "paxos_conditions": "https://support.paxos.com/articles/5590384005-pax-gold-paxg-overview",
+  "regulation": "https://eesp.fgv.br/sites/default/files/uploads/regulamento-do-desafio-de-dados-de-moedas-digitais-fgv-2026_0.pdf"
+}

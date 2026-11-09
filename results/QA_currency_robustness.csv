@@ -1,0 +1,4 @@
+﻿currency_method,sample,n,mean_signed_bps,median_abs_bps,p95_abs_bps,max_abs_bps,above_25_fraction,above_50_fraction,above_100_fraction
+Bitfinex_USD_observed,same_common_hours_validation_overlap,2088,-6.401534607,34.5195504,112.4450915,367.8229947,0.6585249042,0.3055555556,0.0785440613
+Coinbase_USD_observed,same_common_hours_validation_overlap,2088,-13.67906762,32.17937075,115.5779825,350.6205821,0.6000957854,0.313697318,0.08429118774
+USDT_equals_USD_assumption_only,same_common_hours_validation_overlap,2088,-12.36889382,31.16811022,117.3919348,357.8179914,0.5953065134,0.3069923372,0.08189655172

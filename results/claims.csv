@@ -1,0 +1,132 @@
+﻿claim_id,value,unit,source_file,sample,assumptions
+candidate_weekends,323,weekends,results/panel_status.json,calendar,
+valid_weekends,301,weekends,results/panel_status.json,USD_regular_calendar,
+valid_hours,36572,hours,results/panel_status.json,USD_common_hours,
+common_hours_median_abs_bps,36.3794333401257,log_bps,results/T1_fidelidade.csv,full_common_hours,
+common_hours_p95_abs_bps,120.11527962726629,log_bps,results/T1_fidelidade.csv,full_common_hours,
+common_hours_above_50_fraction,0.35622880892486053,fraction,results/T1_fidelidade.csv,full_common_hours,
+common_hours_mean_signed_bps,6.997041583347956,log_bps,results/T1_fidelidade.csv,full_common_hours,
+common_hours_n,36572,count,results/T1_fidelidade.csv,full_common_hours,
+reopen_median_abs_bps,48.43799791326794,log_bps,results/T1_fidelidade.csv,full_reopen,
+reopen_p95_abs_bps,164.18372967594095,log_bps,results/T1_fidelidade.csv,full_reopen,
+reopen_above_50_fraction,0.4850498338870432,fraction,results/T1_fidelidade.csv,full_reopen,
+reopen_mean_signed_bps,15.666068395120933,log_bps,results/T1_fidelidade.csv,full_reopen,
+reopen_n,301,count,results/T1_fidelidade.csv,full_reopen,
+one_hour_median_abs_bps,37.13533247481308,log_bps,results/T1_fidelidade.csv,full_one_hour,
+one_hour_p95_abs_bps,134.7342357878156,log_bps,results/T1_fidelidade.csv,full_one_hour,
+one_hour_above_50_fraction,0.39867109634551495,fraction,results/T1_fidelidade.csv,full_one_hour,
+one_hour_mean_signed_bps,11.310660503205604,log_bps,results/T1_fidelidade.csv,full_one_hour,
+one_hour_n,301,count,results/T1_fidelidade.csv,full_one_hour,
+seven_hours_median_abs_bps,37.99323972715562,log_bps,results/T1_fidelidade.csv,full_seven_hours,
+seven_hours_p95_abs_bps,115.76489472304361,log_bps,results/T1_fidelidade.csv,full_seven_hours,
+seven_hours_above_50_fraction,0.38205980066445183,fraction,results/T1_fidelidade.csv,full_seven_hours,
+seven_hours_mean_signed_bps,8.553673910475206,log_bps,results/T1_fidelidade.csv,full_seven_hours,
+seven_hours_n,301,count,results/T1_fidelidade.csv,full_seven_hours,
+GLD_crossing_months,9.3,months,results/T3_baseline.csv,holding_cost_baseline,token costs assumed; ETF current official fee/spread; USD pretax
+GLD_status,token_cheaper_after_crossing,classification,results/T3_baseline.csv,holding_cost_baseline,
+GLD_rt_bps,1.0,bps,results/T3_baseline.csv,holding_cost_baseline,
+GLDM_crossing_months,37.2,months,results/T3_baseline.csv,holding_cost_baseline,token costs assumed; ETF current official fee/spread; USD pretax
+GLDM_status,token_cheaper_after_crossing,classification,results/T3_baseline.csv,holding_cost_baseline,
+GLDM_rt_bps,1.0,bps,results/T3_baseline.csv,holding_cost_baseline,
+token_rt_bps,32.0,bps,results/T3_baseline.csv,holding_cost_baseline,assumed token fees/spread/conversion
+trade_calendar_weeks,104,weeks,results/T2_baseline_inference.csv,recent_104_calendar_weeks,
+trade_valid_paths,55,weeks,results/T2_baseline_inference.csv,recent_104_calendar_weeks,
+trade_signals,60,signals,results/T2_baseline_inference.csv,recent_104_calendar_weeks,
+evaluated_trades,44,count,results/T2_baseline_inference.csv,recent_104_calendar_weeks,conditional cost assumptions; before unknown borrowing/financing; execution not verified
+signals_unassessed,16,count,results/T2_baseline_inference.csv,recent_104_calendar_weeks,conditional cost assumptions; before unknown borrowing/financing; execution not verified
+mean_gross_mid_bps,4.526334653643858,bps,results/T2_baseline_inference.csv,recent_104_calendar_weeks,conditional cost assumptions; before unknown borrowing/financing; execution not verified
+mean_total_modeled_cost_bps,44.53887317985197,bps,results/T2_baseline_inference.csv,recent_104_calendar_weeks,conditional cost assumptions; before unknown borrowing/financing; execution not verified
+positive_gross_fraction,0.6136363636363636,fraction,results/T2_baseline_inference.csv,recent_104_calendar_weeks,conditional cost assumptions; before unknown borrowing/financing; execution not verified
+mean_trade_model_bps,-40.01253852620811,bps,results/T2_baseline_inference.csv,recent_104_calendar_weeks,conditional cost assumptions; before unknown borrowing/financing; execution not verified
+median_trade_model_bps,-40.688245901482375,bps,results/T2_baseline_inference.csv,recent_104_calendar_weeks,conditional cost assumptions; before unknown borrowing/financing; execution not verified
+worst_trade_model_bps,-115.26719892350528,bps,results/T2_baseline_inference.csv,recent_104_calendar_weeks,conditional cost assumptions; before unknown borrowing/financing; execution not verified
+positive_trade_fraction,0.0,fraction,results/T2_baseline_inference.csv,recent_104_calendar_weeks,conditional cost assumptions; before unknown borrowing/financing; execution not verified
+trend_status,exploratory_association,classification,results/T4_trend.csv,complete_quarters,exploratory HAC; association not causality
+trend_n_quarters,24,value,results/T4_trend.csv,complete_quarters,exploratory HAC; association not causality
+trend_beta_per_year,-0.08657130034329091,value,results/T4_trend.csv,complete_quarters,exploratory HAC; association not causality
+trend_beta_lo,-0.24699183264985228,value,results/T4_trend.csv,complete_quarters,exploratory HAC; association not causality
+trend_beta_hi,0.07384923196327045,value,results/T4_trend.csv,complete_quarters,exploratory HAC; association not causality
+baseline_median_abs_bps,35.45393763529184,bps,results/T5_sensibilidade.csv,recent_joint_weekly_paths,conditional scenario not forecast
+baseline_p95_abs_bps,129.65517588688735,bps,results/T5_sensibilidade.csv,recent_joint_weekly_paths,conditional scenario not forecast
+baseline_mean_trade_model_before_unknown_carry_bps,-40.01253852620811,bps,results/T5_sensibilidade.csv,recent_joint_weekly_paths,conditional scenario not forecast
+baseline_method,deterministic_sensitivity_insufficient_joint_paths,classification,results/T5_sensibilidade.csv,recent_joint_weekly_paths,conditional scenario not forecast
+lower_friction_median_abs_bps,35.45393763529184,bps,results/T5_sensibilidade.csv,recent_joint_weekly_paths,conditional scenario not forecast
+lower_friction_p95_abs_bps,129.65517588688735,bps,results/T5_sensibilidade.csv,recent_joint_weekly_paths,conditional scenario not forecast
+lower_friction_mean_trade_model_before_unknown_carry_bps,-17.7430772860044,bps,results/T5_sensibilidade.csv,recent_joint_weekly_paths,conditional scenario not forecast
+lower_friction_method,deterministic_sensitivity_insufficient_joint_paths,classification,results/T5_sensibilidade.csv,recent_joint_weekly_paths,conditional scenario not forecast
+stress_median_abs_bps,70.90787527058367,bps,results/T5_sensibilidade.csv,recent_joint_weekly_paths,conditional scenario not forecast
+stress_p95_abs_bps,259.3103517737747,bps,results/T5_sensibilidade.csv,recent_joint_weekly_paths,conditional scenario not forecast
+stress_mean_trade_model_before_unknown_carry_bps,-84.06037846864317,bps,results/T5_sensibilidade.csv,recent_joint_weekly_paths,conditional scenario not forecast
+stress_method,deterministic_sensitivity_insufficient_joint_paths,classification,results/T5_sensibilidade.csv,recent_joint_weekly_paths,conditional scenario not forecast
+cutoff_utc,2026-11-08T00:00:00Z,timestamp,config/params.json,exclusive_end,
+short_access_verified,False,boolean,config/params.json,all_simulations,
+fx_source_median_abs_difference_bps,6.4992528251239055,log_bps,results/panel_status.json,systematic_first_two_days_each_month,
+fx_source_comparison_hours,3168,hours,results/panel_status.json,systematic_first_two_days_each_month,
+assumption_token_fee_bps_per_fill,10,bps,config/params.json,simulation_baseline,hypothesis not observed
+assumption_token_full_spread_bps,10,bps,config/params.json,simulation_baseline,hypothesis not observed
+assumption_gold_commission_bps_per_fill,1,bps,config/params.json,simulation_baseline,hypothesis not observed
+assumption_conversion_roundtrip_bps,2,bps,config/params.json,simulation_baseline,hypothesis not observed
+assumption_slippage_bps_per_fill,2,bps,config/params.json,simulation_baseline,hypothesis not observed
+exit_hours,6,hours,config/params.json,simulation,
+signal_delay_minutes,60,minutes,config/params.json,simulation,
+bootstrap_replicates,2000,replicates,config/params.json,bootstrap,
+refined_b_0_to_b_1h_mean_abs_change_bps,-11.001850002035992,bps,results/T7_paired_changes.csv,retrospective_extension,post_original_analysis; conditional; no causal or executable claim
+refined_b_0_to_b_1h_mean_lo,-15.208876921591994,bps,results/T7_paired_changes.csv,retrospective_extension,post_original_analysis; conditional; no causal or executable claim
+refined_b_0_to_b_1h_mean_hi,-7.165837407044697,bps,results/T7_paired_changes.csv,retrospective_extension,post_original_analysis; conditional; no causal or executable claim
+refined_b_0_to_b_1h_paired_n,301.0,bps,results/T7_paired_changes.csv,retrospective_extension,post_original_analysis; conditional; no causal or executable claim
+refined_b_0_to_b_7h_mean_abs_change_bps,-15.347091340029928,bps,results/T7_paired_changes.csv,retrospective_extension,post_original_analysis; conditional; no causal or executable claim
+refined_b_0_to_b_7h_mean_lo,-20.239738552590776,bps,results/T7_paired_changes.csv,retrospective_extension,post_original_analysis; conditional; no causal or executable claim
+refined_b_0_to_b_7h_mean_hi,-10.6759693704312,bps,results/T7_paired_changes.csv,retrospective_extension,post_original_analysis; conditional; no causal or executable claim
+refined_b_0_to_b_7h_paired_n,301.0,bps,results/T7_paired_changes.csv,retrospective_extension,post_original_analysis; conditional; no causal or executable claim
+refined_persistence_mae_bps,16.456693232675224,bps,results/T8_forecast_summary.csv,retrospective_extension,post_original_analysis; conditional; no causal or executable claim
+refined_persistence_rmse_bps,24.642060420639794,bps,results/T8_forecast_summary.csv,retrospective_extension,post_original_analysis; conditional; no causal or executable claim
+refined_persistence_mae_skill_vs_persistence,-2.220446049250313e-16,bps,results/T8_forecast_summary.csv,retrospective_extension,post_original_analysis; conditional; no causal or executable claim
+refined_persistence_mae_difference_vs_persistence,0.0,bps,results/T8_forecast_summary.csv,retrospective_extension,post_original_analysis; conditional; no causal or executable claim
+refined_persistence_difference_lo,0.0,bps,results/T8_forecast_summary.csv,retrospective_extension,post_original_analysis; conditional; no causal or executable claim
+refined_persistence_difference_hi,0.0,bps,results/T8_forecast_summary.csv,retrospective_extension,post_original_analysis; conditional; no causal or executable claim
+refined_persistence_n_test,204.0,bps,results/T8_forecast_summary.csv,retrospective_extension,post_original_analysis; conditional; no causal or executable claim
+refined_zero_basis_mae_bps,51.78620768521205,bps,results/T8_forecast_summary.csv,retrospective_extension,post_original_analysis; conditional; no causal or executable claim
+refined_zero_basis_rmse_bps,68.32894765248761,bps,results/T8_forecast_summary.csv,retrospective_extension,post_original_analysis; conditional; no causal or executable claim
+refined_zero_basis_mae_skill_vs_persistence,-2.1468173437412745,bps,results/T8_forecast_summary.csv,retrospective_extension,post_original_analysis; conditional; no causal or executable claim
+refined_zero_basis_mae_difference_vs_persistence,35.32951445253682,bps,results/T8_forecast_summary.csv,retrospective_extension,post_original_analysis; conditional; no causal or executable claim
+refined_zero_basis_difference_lo,27.607113653595125,bps,results/T8_forecast_summary.csv,retrospective_extension,post_original_analysis; conditional; no causal or executable claim
+refined_zero_basis_difference_hi,43.70217981730763,bps,results/T8_forecast_summary.csv,retrospective_extension,post_original_analysis; conditional; no causal or executable claim
+refined_zero_basis_n_test,204.0,bps,results/T8_forecast_summary.csv,retrospective_extension,post_original_analysis; conditional; no causal or executable claim
+refined_historical_mean_mae_bps,56.37385097068966,bps,results/T8_forecast_summary.csv,retrospective_extension,post_original_analysis; conditional; no causal or executable claim
+refined_historical_mean_rmse_bps,74.29231504643082,bps,results/T8_forecast_summary.csv,retrospective_extension,post_original_analysis; conditional; no causal or executable claim
+refined_historical_mean_mae_skill_vs_persistence,-2.4255880068759996,bps,results/T8_forecast_summary.csv,retrospective_extension,post_original_analysis; conditional; no causal or executable claim
+refined_historical_mean_mae_difference_vs_persistence,39.91715773801444,bps,results/T8_forecast_summary.csv,retrospective_extension,post_original_analysis; conditional; no causal or executable claim
+refined_historical_mean_difference_lo,30.55002683498288,bps,results/T8_forecast_summary.csv,retrospective_extension,post_original_analysis; conditional; no causal or executable claim
+refined_historical_mean_difference_hi,50.06653328598956,bps,results/T8_forecast_summary.csv,retrospective_extension,post_original_analysis; conditional; no causal or executable claim
+refined_historical_mean_n_test,204.0,bps,results/T8_forecast_summary.csv,retrospective_extension,post_original_analysis; conditional; no causal or executable claim
+refined_linear_adjustment_mae_bps,17.721783425002318,bps,results/T8_forecast_summary.csv,retrospective_extension,post_original_analysis; conditional; no causal or executable claim
+refined_linear_adjustment_rmse_bps,26.050482153721283,bps,results/T8_forecast_summary.csv,retrospective_extension,post_original_analysis; conditional; no causal or executable claim
+refined_linear_adjustment_mae_skill_vs_persistence,-0.07687390014752338,bps,results/T8_forecast_summary.csv,retrospective_extension,post_original_analysis; conditional; no causal or executable claim
+refined_linear_adjustment_mae_difference_vs_persistence,1.2650901923270939,bps,results/T8_forecast_summary.csv,retrospective_extension,post_original_analysis; conditional; no causal or executable claim
+refined_linear_adjustment_difference_lo,-0.35082223263197704,bps,results/T8_forecast_summary.csv,retrospective_extension,post_original_analysis; conditional; no causal or executable claim
+refined_linear_adjustment_difference_hi,3.0141583868775568,bps,results/T8_forecast_summary.csv,retrospective_extension,post_original_analysis; conditional; no causal or executable claim
+refined_linear_adjustment_n_test,204.0,bps,results/T8_forecast_summary.csv,retrospective_extension,post_original_analysis; conditional; no causal or executable claim
+refined_linear_adjustment_context_mae_bps,18.208883872424064,bps,results/T8_forecast_summary.csv,retrospective_extension,post_original_analysis; conditional; no causal or executable claim
+refined_linear_adjustment_context_rmse_bps,26.43884746182901,bps,results/T8_forecast_summary.csv,retrospective_extension,post_original_analysis; conditional; no causal or executable claim
+refined_linear_adjustment_context_mae_skill_vs_persistence,-0.10647282628261068,bps,results/T8_forecast_summary.csv,retrospective_extension,post_original_analysis; conditional; no causal or executable claim
+refined_linear_adjustment_context_mae_difference_vs_persistence,1.7521906397488398,bps,results/T8_forecast_summary.csv,retrospective_extension,post_original_analysis; conditional; no causal or executable claim
+refined_linear_adjustment_context_difference_lo,-0.018581848051326316,bps,results/T8_forecast_summary.csv,retrospective_extension,post_original_analysis; conditional; no causal or executable claim
+refined_linear_adjustment_context_difference_hi,3.568369473254757,bps,results/T8_forecast_summary.csv,retrospective_extension,post_original_analysis; conditional; no causal or executable claim
+refined_linear_adjustment_context_n_test,204.0,bps,results/T8_forecast_summary.csv,retrospective_extension,post_original_analysis; conditional; no causal or executable claim
+refined_fx1_valid_paths,55.0,bps,results/T9_fx_coverage.csv,retrospective_extension,post_original_analysis; conditional; no causal or executable claim
+refined_fx1_signals,60.0,bps,results/T9_fx_coverage.csv,retrospective_extension,post_original_analysis; conditional; no causal or executable claim
+refined_fx1_evaluated_trades,44.0,bps,results/T9_fx_coverage.csv,retrospective_extension,post_original_analysis; conditional; no causal or executable claim
+refined_fx1_unassessed_signals,16.0,bps,results/T9_fx_coverage.csv,retrospective_extension,post_original_analysis; conditional; no causal or executable claim
+refined_fx1_mean_model_bps,-40.01253852620811,bps,results/T9_fx_coverage.csv,retrospective_extension,post_original_analysis; conditional; no causal or executable claim
+refined_fx1_positive_fraction,0.0,bps,results/T9_fx_coverage.csv,retrospective_extension,post_original_analysis; conditional; no causal or executable claim
+refined_fx5_valid_paths,86.0,bps,results/T9_fx_coverage.csv,retrospective_extension,post_original_analysis; conditional; no causal or executable claim
+refined_fx5_signals,68.0,bps,results/T9_fx_coverage.csv,retrospective_extension,post_original_analysis; conditional; no causal or executable claim
+refined_fx5_evaluated_trades,66.0,bps,results/T9_fx_coverage.csv,retrospective_extension,post_original_analysis; conditional; no causal or executable claim
+refined_fx5_unassessed_signals,2.0,bps,results/T9_fx_coverage.csv,retrospective_extension,post_original_analysis; conditional; no causal or executable claim
+refined_fx5_mean_model_bps,-39.75704241521497,bps,results/T9_fx_coverage.csv,retrospective_extension,post_original_analysis; conditional; no causal or executable claim
+refined_fx5_positive_fraction,0.0,bps,results/T9_fx_coverage.csv,retrospective_extension,post_original_analysis; conditional; no causal or executable claim
+refined_missing_tipping_mean_bps,110.03448094707231,bps,results/T9_missingness_summary.csv,retrospective_extension,post_original_analysis; conditional; no causal or executable claim
+refined_cost_reduction_to_zero_fraction,0.898373390917051,fraction,results/T10_cost_budget.csv,retrospective_extension,post_original_analysis; conditional; no causal or executable claim
+refined_grid_configurations,1458.0,count,results/T10_grid_summary.csv,retrospective_extension,post_original_analysis; conditional; no causal or executable claim
+refined_grid_positive_means,0.0,count,results/T10_grid_summary.csv,retrospective_extension,post_original_analysis; conditional; no causal or executable claim
+refined_grid_best_mean_bps,-2.877252146,bps,results/T10_grid_summary.csv,retrospective_extension,post_original_analysis; conditional; no causal or executable claim

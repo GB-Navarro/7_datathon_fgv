@@ -1,0 +1,236 @@
+{
+  "frozen_at_utc": "2026-11-08T17:08:49.724444+00:00",
+  "config_hash": "7143534efc352009e93f880779ae1a1fa11293a51ab7208d3786b92b81b9e130",
+  "config": {
+    "spec_version": "2.1",
+    "review_date": "2026-11-08",
+    "study_status": "implementation",
+    "plan_frozen_at_utc": null,
+    "data": {
+      "start_utc": "2020-08-28T12:00:00Z",
+      "end_exclusive_utc": "2026-11-08T00:00:00Z",
+      "first_candidate_reopen_date": "2020-08-30",
+      "last_candidate_reopen_date": "2026-11-01",
+      "candidate_weekends": 323,
+      "primary_pair": "PAXGUSDT",
+      "usd_conversion_pair": "USDT-USD",
+      "usd_primary_source": "Bitfinex tUSTUSD",
+      "usd_validation_source": "Coinbase USDT-USD",
+      "gold_include_volume_and_flats": true,
+      "secondary_pair": "PAXG-USD",
+      "gold_reference": "Dukascopy XAUUSD bid/ask",
+      "q_missing_policy": "exclude_from_primary_usd_sample",
+      "q_equals_one_extension": "descriptive_separate_sample",
+      "carry_across_market_closure": false,
+      "use_usdc_as_usd": false
+    },
+    "alignment": {
+      "hourly_interval_minutes": 60,
+      "candidate_gap_min_hours": 36,
+      "candidate_gap_max_hours": 84,
+      "requires_calendar_validation": true,
+      "calendar_timezone": "America/New_York",
+      "utc_price_tolerances_minutes": [
+        1,
+        5
+      ],
+      "primary_price_tolerance_minutes": 1,
+      "minute_robustness_recent_weekends": 26,
+      "confirmed_trade_timestamps_required_for_executable_claim": true
+    },
+    "analysis": {
+      "recent_window_weeks": 104,
+      "stress_threshold_quantile": 0.9,
+      "stress_lookback_weekends": 104,
+      "stress_min_history_weekends": 52,
+      "bootstrap_seed": 20261108,
+      "bootstrap_replicates": 2000,
+      "bootstrap_block_weeks": 4,
+      "bootstrap_block_sensitivity_weeks": [
+        2,
+        8
+      ],
+      "confidence_level": 0.95,
+      "tail_quantiles": [
+        0.5,
+        0.95
+      ],
+      "dislocation_thresholds_log_bps": [
+        25,
+        50,
+        100
+      ],
+      "trend_min_complete_quarters": 12,
+      "trend_min_valid_hours_fraction_per_quarter": 0.8,
+      "hac_lags_quarters": 2,
+      "basis_log_floor_bps": 1
+    },
+    "convergence": {
+      "label": "conditional_simulation_not_risk_free_arbitrage",
+      "recent_window_weeks": 104,
+      "min_valid_weekends_for_aggregate_inference": 52,
+      "signal_delay_from_reopen_minutes": 60,
+      "entry_delay_from_signal_minutes": 1,
+      "exit_after_entry_hours": 6,
+      "sensitivity_exit_hours": [
+        1,
+        24
+      ],
+      "signal_abs_basis_min_log_bps": 10,
+      "signal_price_resolution": "1m_close_before_signal",
+      "price_proxy": "next_minute_open_if_valid",
+      "token_fee_bps_per_fill_grid": [
+        2,
+        5,
+        10
+      ],
+      "token_fee_bps_per_fill_base": 10,
+      "token_full_spread_bps_grid": [
+        2,
+        10,
+        25
+      ],
+      "gold_commission_bps_per_fill_grid": [
+        1,
+        2
+      ],
+      "gold_spread_source": "observed_bid_ask_at_entry_and_exit",
+      "stablecoin_conversion_roundtrip_bps_grid": [
+        0,
+        2,
+        10
+      ],
+      "slippage_bps_per_fill_grid": [
+        0,
+        2,
+        5
+      ],
+      "token_borrow_bps_per_day": null,
+      "gold_financing_bps_per_day": null,
+      "residual_carry_roundtrip_bps_grid": [
+        0,
+        5,
+        25
+      ],
+      "short_access_verified": false,
+      "baseline": {
+        "token_fee_bps_per_fill": 10,
+        "token_full_spread_bps": 10,
+        "gold_commission_bps_per_fill": 1,
+        "conversion_roundtrip_bps": 2,
+        "slippage_bps_per_fill": 2
+      },
+      "capacity_participation_grid": [
+        0.01,
+        0.05
+      ],
+      "capacity_label": "hypothetical_not_orderbook_depth",
+      "include_negative_pnl": true,
+      "drop_trade_based_on_realized_pnl": false
+    },
+    "holding_cost": {
+      "currency": "USD",
+      "scope": "pretax_equal_access_funded_cash_accounts",
+      "notional_usd_grid": [
+        1000,
+        10000,
+        100000
+      ],
+      "horizon_months_grid": [
+        1,
+        3,
+        6,
+        12,
+        24,
+        36
+      ],
+      "token_fee_bps_per_fill_grid": [
+        2,
+        5,
+        10
+      ],
+      "token_full_spread_bps_grid": [
+        2,
+        10,
+        25
+      ],
+      "etf_fee_bps_per_fill_grid": [
+        0,
+        5
+      ],
+      "etf_full_spread_bps_grid": [
+        2,
+        5,
+        10
+      ],
+      "stablecoin_conversion_roundtrip_bps_grid": [
+        0,
+        2,
+        10
+      ],
+      "network_withdrawal_roundtrip_usd_grid": [
+        0,
+        10,
+        50
+      ],
+      "gld_fee_bps_per_year": 40,
+      "gldm_fee_bps_per_year": 10,
+      "token_storage_bps_per_year_current": 0,
+      "token_storage_hypothetical_bps_per_year_grid": [
+        0,
+        10,
+        20,
+        40
+      ],
+      "etf_spread_status": "scenario_until_observed_on_exchange",
+      "token_spread_status": "scenario_until_observed_in_historical_book",
+      "baseline": {
+        "notional_usd": 10000,
+        "token_fee_bps_per_fill": 10,
+        "token_full_spread_bps": 10,
+        "etf_fee_bps_per_fill": 0,
+        "etf_full_spread_fallback_bps": 2,
+        "conversion_roundtrip_bps": 2,
+        "network_withdrawal_roundtrip_usd": 0
+      }
+    },
+    "scenarios": {
+      "method": "joint_weekly_block_resampling",
+      "min_recent_valid_weekends": 78,
+      "horizon_weeks": 52,
+      "label": "conditional_one_year_sensitivity_not_forecast",
+      "baseline": {
+        "basis_scale": 1.0,
+        "variable_cost_scale": 1.0,
+        "volume_scale": 1.0,
+        "token_storage_bps_per_year": 0
+      },
+      "lower_friction": {
+        "basis_scale": 1.0,
+        "variable_cost_scale": 0.5,
+        "volume_scale": 1.0,
+        "token_storage_bps_per_year": 0
+      },
+      "stress": {
+        "basis_scale": 2.0,
+        "variable_cost_scale": 2.0,
+        "volume_scale": 0.5,
+        "token_storage_bps_per_year": 20
+      },
+      "scales_are_assumptions": true,
+      "annual_net_capacity_result_requires_valid_trade_paths": true,
+      "professional_desk_conclusion_enabled": false
+    },
+    "delivery": {
+      "deadline_brasilia": "2026-11-08T23:59:00-03:00",
+      "target_submit_brasilia": "2026-11-08T22:00:00-03:00",
+      "editorial_max_slides": 10,
+      "slide_limit_confirmed_in_regulation": false,
+      "scripts_txt_if_scripts_exist": true,
+      "minimum_pdf_slides_if_reduced": 8,
+      "baseline_implementation_budget_hours": 8
+    }
+  },
+  "note": "Congelamento de implementação; pesquisa prévia e amostras já haviam sido vistas.",
+  "python": "3.11.9"
+}

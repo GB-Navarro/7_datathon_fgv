@@ -1,0 +1,9 @@
+{
+  "calendar_candidates": 323,
+  "valid_weekends": 301,
+  "scheduled_hourly_rows": 37154,
+  "valid_hourly_rows": 36572,
+  "fx_comparison_hours": 3168,
+  "fx_median_abs_difference_bps": 6.4992528251239055,
+  "calendar_note": "Horário regular NY 18h domingo/17h sexta; exceções sem calendário documental completo excluídas do primário."
+}

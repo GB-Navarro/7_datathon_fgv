@@ -1,0 +1,11 @@
+{
+  "pages": 15,
+  "main_pages": 10,
+  "appendix_pages": 5,
+  "design": "relatorio-v5",
+  "pdf": "slides/entrega.pdf",
+  "supplementary_pdf": "slides/entrega_suplementar.pdf",
+  "html": "slides/entrega.html",
+  "generated_at_utc": "2026-11-08T20:51:33.555835+00:00",
+  "team_identity_provided": true
+}

@@ -1,0 +1,109 @@
+﻿slide,item,mostrado,exato,origem,tipo,linha,gera,no_pdf
+1,Horas medidas,36.572,36572,summary.json → valid_hours,lido de arquivo,v3_deck.py:214,src/analysis.py,sim
+1,Meia-vida do ruído (arredondada),4,3.831288188915063,T15_componentes.json → meia_vida_transitorio_pregoes,lido de arquivo,v3_deck.py:214,src/rotation.py,sim
+1,Saldo por operação na reabertura (intermediário),−22,-21.97328995,"T2_convergencia.csv → mean_model_bps (taxa 5, spread 2, ouro 1, câmbio 2, desliz. 2)",calculado no deck,v3_deck.py:214,src/analysis.py,sim
+1,"Ganho da rotação, bps/ano",+130,129.901226,"T12_rotacao_resumo.csv → ganho_anual_vs_gldm_bps (papel=principal, cenário intermediário)",lido de arquivo,v3_deck.py:214,src/rotation.py,sim
+1,IC 90% da rotação,52 a 212,51.74 a 211.78,"T12_rotacao_resumo.csv → ic90_lo, ic90_hi",lido de arquivo,v3_deck.py:214,src/rotation.py,sim
+1,"XAUT, bps/ano",+69,68.9330003758436,v2/T17_xaut_resumo.json → ganho_anual_bps,lido de arquivo,v3_deck.py:214,src/v2_xaut.py,sim
+2,Jan/2021: 90% das horas acima de,38 bps,38.24311333,T11_regime_mensal.csv → p10_bps (2021-01),lido de arquivo,v3_deck.py:226,src/regime.py,sim
+2,Mar/2024: desconto mínimo e máximo,"2,3% a 3,1%",2.2827% a 3.0763% (3 pregões),"T15_componentes_serie.csv → desvio_bps (mar/2024, ≤ −200)",calculado no deck,v3_deck.py:226,src/rotation.py,sim
+2,Volume Binance 2026,US$ 10 bi,10304.65226,"T11_regime_anual.csv → usd_volume_millions (2026), em milhões",calculado no deck,v3_deck.py:228,src/regime.py,sim
+2,Desvio mediano em hora comum,36 bps,36.3794333401257,summary.json → common_hours_median_abs_bps,escrito à mão,v3_deck.py:229,—,sim
+2,Operações avaliadas (H2),44 operações,44,summary.json → evaluated_trades,escrito à mão,v3_deck.py:251,—,sim
+2,Combinações de custo e prazo,1.458,1458,T10_grid_summary.csv → soma de configurations,escrito à mão,v3_deck.py:251,—,sim
+2,Correlação diária PAXG × ouro,"0,99",0.99,"Cong, Mayer e Rabetti (2026), apêndice A.2, citando Harvey et al. (2025)",fato externo,v3_deck.py:245,—,sim
+3,Horas com ouro e token ativos,36.572,36572,summary.json → valid_hours,lido de arquivo,v3_deck.py:264,src/analysis.py,sim
+3,Fins de semana válidos,301,301,summary.json → valid_weekends,lido de arquivo,v3_deck.py:265,src/analysis.py,sim
+3,Fins de semana candidatos,323,323,summary.json → candidate_weekends,lido de arquivo,v3_deck.py:265,src/analysis.py,sim
+3,Pregões da NYSE (base diária),1.552,1552,T12_rotacao_placebo.json → dias_uteis,lido de arquivo,v3_deck.py:266,src/rotation.py,sim
+3,Pregões de XAUT,1.461,1461,v2/T17_xaut_resumo.json → dias_validos,lido de arquivo,v3_deck.py:267,src/v2_xaut.py,sim
+3,Exemplo: PAXG em USDT,"2.061,00",2061,T11_kraken_extremos.csv → p_usdt (04/03/2024 16h),lido de arquivo,v3_deck.py:284,src/regime.py (--kraken),sim
+3,Exemplo: USDT/USD,"1,0003",1.0003,T11_kraken_extremos.csv → q,lido de arquivo,v3_deck.py:284,src/regime.py (--kraken),sim
+3,Exemplo: PAXG em US$,"2.061,62",2061.6183,p_usdt × q,calculado no deck,v3_deck.py:284,—,sim
+3,Exemplo: ouro Dukascopy,"2.109,09",2109.09,T11_kraken_extremos.csv → S,lido de arquivo,v3_deck.py:285,src/regime.py (--kraken),sim
+3,Exemplo: desvio,"−227,7",-227.6531792,T11_kraken_extremos.csv → basis_log_bps,lido de arquivo,v3_deck.py:286,src/regime.py (--kraken),sim
+3,Exemplo: Kraken na mesma hora,"−238,7",-238.6617581,T11_kraken_extremos.csv → kraken_bps,lido de arquivo,v3_deck.py:287,src/regime.py (--kraken),sim
+3,Nosso ouro × GLD por onça,"1,5 bps",1.5133798134463294,QA_gold_reference_summary.json → median_abs_level_difference_bps,lido de arquivo,v3_deck.py:293,src/quality.py,sim
+3,USDT/USD Bitfinex × Coinbase,"6,5 bps",6.4992528251239055,summary.json → fx_source_median_abs_difference_bps,lido de arquivo,v3_deck.py:294,src/analysis.py,sim
+3,PAXG Binance × Kraken nos extremos,12 bps,11.808571349999994,T11_kraken_extremos.csv → mediana |kraken_bps − basis_log_bps|,calculado no deck,v3_deck.py:295,src/regime.py (--kraken),sim
+4,Dias da série diária,1.552,1552,T12_rotacao_placebo.json → dias_uteis,escrito à mão,v3_deck.py:308,—,sim
+4,Faixa da rotação (texto),−19 / +19,19,"T12_rotacao_resumo.csv → k_bps (papel=principal, cenário intermediário)",escrito à mão,v3_deck.py:315,—,sim
+4,Limiar da arbitragem,10 bps,10,config/params.json (convergence),escrito à mão,v3_deck.py:314,—,sim
+4,Placebo: carteiras sorteadas,1.000,1000,T12_rotacao_placebo.json → simulacoes,escrito à mão,v3_deck.py:319,—,sim
+5,Custo da arbitragem (4 execuções),"26,5",26.49962460364386,summary.json mean_gross_mid_bps − saldo intermediário,calculado no deck,v3_deck.py:352,—,sim
+5,Custo de um ciclo da rotação,19,19.0,"T12_rotacao_resumo.csv → custo_ciclo_bps (papel=principal, cenário intermediário)",lido de arquivo,v3_deck.py:352,src/rotation.py,sim
+5,"Custos intermediários (5, 2, 1, 2, 2)",5 / 2 / 1 / 2 / 2,"5, 2, 1, 2, 2","src/v2_report_pages.py load(): conv mid = (5, 2, 1, 2, 2)",escrito à mão,v3_deck.py:355,—,sim
+5,"Custos originais (taxa, spread)",10 / 10,"10, 10","summary.json → assumption_token_fee_bps_per_fill, assumption_token_full_spread_bps",escrito à mão,v3_deck.py:355,—,sim
+5,HMM: mínimo de pregões,500,500,src/v2_regimes.py → MIN_OBS,escrito à mão,v3_deck.py:339,—,sim
+6,Meia-vida do ruído,"3,8",3.831288188915063,T15_componentes.json → meia_vida_transitorio_pregoes,lido de arquivo,v3_deck.py:369,src/rotation.py,sim
+6,Parte da variação vinda do nível do mês,64%,0.6439712299495812,T11_regime_resumo.json → variance_share_monthly_level,lido de arquivo,v3_deck.py:370,src/regime.py,sim
+6,Segue o ouro no dia (b0),95%,0.9457721173704876,T16_correcao_de_erro.json → coef.ret_ouro,lido de arquivo,v3_deck.py:371,src/rotation.py,sim
+6,Correção diária (γ),15%,0.15053221591327978,T16_correcao_de_erro.json → correcao_diaria,lido de arquivo,v3_deck.py:372,src/rotation.py,sim
+6,Meia-vida na correção de erro,"4,2",4.2486503879021456,T16_correcao_de_erro.json → meia_vida_pregoes,lido de arquivo,v3_deck.py:372,src/rotation.py,sim
+6,Nível mínimo,−79,-78.98886975,T15_componentes_serie.csv → mín. nivel_suavizado_bps,calculado no deck,v3_deck.py:374,src/rotation.py,sim
+6,Nível máximo,+94,93.64588219,T15_componentes_serie.csv → máx. nivel_suavizado_bps,calculado no deck,v3_deck.py:374,src/rotation.py,sim
+6,Taxa de resgate Paxos,"0,125% a 0,5%","0,125%; 0,25%; 0,35%; 0,5%","support.paxos.com, PAX Gold (PAXG) Overview (faixas vigentes desde 01/09/2026)",fato externo,v3_deck.py:374,—,sim
+6,R² semanal do ouro sobre o desvio,4%,0.04268281849318234,T16_correcao_de_erro.json → semanal_var_desvio_em_ret_ouro.r2,lido de arquivo,v3_deck.py:374,src/rotation.py,sim
+6,Dias com regime de desconto (HMM),37%,0.3679694947569113,v2/T19_regimes_resumo.json → fracao_dias_desconto_dominante,lido de arquivo,v3_deck.py:381,src/v2_regimes.py,sim
+6,Dias com regime de prêmio (HMM),17%,0.1744518589132507,v2/T19_regimes_resumo.json → fracao_dias_premio_dominante,lido de arquivo,v3_deck.py:381,src/v2_regimes.py,sim
+6,Início do HMM filtrado,set/2022,2022-09-01,v2/T19_regimes_resumo.json → inicio_regra,lido de arquivo,v3_deck.py:205,src/v2_regimes.py,sim
+6,Horas a até 25 bps em 2026,74%,0.735148023,T11_regime_anual.csv → within_25_bps (2026),lido de arquivo,v3_deck.py:382,src/regime.py,sim
+6,Horas a até 25 bps em 2020,5%,0.04671968191,T11_regime_anual.csv → within_25_bps (2020),lido de arquivo,v3_deck.py:382,src/regime.py,sim
+6,Kraken no dia mínimo (rodapé),−256 a −323,−256 a −323,T11_kraken_extremos.csv → kraken_bps em 01/03/2024 (máx. e mín.),calculado no deck,v3_deck.py:387,src/regime.py (--kraken),sim
+7,R² sexta → reabertura,"0,54",0.5447853595767648,T13_fim_de_semana_resumo.json → r2_reabertura_em_sexta,lido de arquivo,v3_deck.py:397,src/rotation.py,sim
+7,R² sexta → 7 h depois,"0,64",0.6399345979439294,T13_fim_de_semana_resumo.json → r2_7h_em_sexta,lido de arquivo,v3_deck.py:397,src/rotation.py,sim
+7,Mesmo sinal sexta e reabertura,83%,0.8338870431893688,T13_fim_de_semana_resumo.json → mesmo_sinal_sexta_reabertura,lido de arquivo,v3_deck.py:397,src/rotation.py,sim
+7,Queda do desvio absoluto em 1 h,"11,0",11.00185,T7_paired_changes.csv → mean_abs_change_bps (b_0_to_b_1h),lido de arquivo,v3_deck.py:397,src/refinement.py,sim
+7,Ganho bruto médio (6 h),"4,5",4.526334653643858,summary.json → mean_gross_mid_bps,lido de arquivo,v3_deck.py:408,src/analysis.py,sim
+7,IC 95% do ganho bruto,"−0,7 a 10,0",-0.742 a 10.042,"T10_cost_budget.csv → gross_lo, gross_hi (6 h)",lido de arquivo,v3_deck.py:408,src/refinement.py,sim
+7,"Saldo, cenário original","−40,0",-40.01253853,"T2_convergencia.csv → mean_model_bps (10, 10, 1, 2, 2)",lido de arquivo,v3_deck.py:405,src/analysis.py,sim
+7,"Saldo, cenário intermediário","−22,0",-21.97328995,"T2_convergencia.csv → mean_model_bps (5, 2, 1, 2, 2)",lido de arquivo,v3_deck.py:406,src/analysis.py,sim
+7,"Saldo, mínimo da grade","−6,0",-5.954184474,"T2_convergencia.csv → mean_model_bps (2, 2, 1, 0, 0)",lido de arquivo,v3_deck.py:407,src/analysis.py,sim
+7,Positivas (original / intermediário),0 de 44 / 3 de 44,"0, 3 de 44",T2_convergencia.csv → positive_fraction × evaluated_trades,calculado no deck,v3_deck.py:405,src/analysis.py,sim
+7,Sinais sem preço,16,16,summary.json → signals_unassessed,lido de arquivo,v3_deck.py:409,src/analysis.py,sim
+7,Ganho necessário dos sinais sem preço,60,60.4265473625,"−(avaliadas × saldo) ÷ (sinais − avaliadas), cenário intermediário",calculado no deck,v3_deck.py:409,—,sim
+7,Custo usado na cascata,"26,5",26.49962460364386,ganho bruto − saldo intermediário,calculado no deck,v3_deck.py:400,—,sim
+8,Faixa da rotação,±19,19.0,"T12_rotacao_resumo.csv → k_bps (papel=principal, cenário intermediário)",lido de arquivo,v3_deck.py:424,src/rotation.py,sim
+8,Custo de uma troca,"9,5",9.5,T12_rotacao_resumo.csv → custo_ciclo_bps ÷ 2,calculado no deck,v3_deck.py:425,src/rotation.py,sim
+8,"Ganho, bps/ano",+130,129.901226,"T12_rotacao_resumo.csv → ganho_anual_vs_gldm_bps (papel=principal, cenário intermediário)",lido de arquivo,v3_deck.py:433,src/rotation.py,sim
+8,Ciclos,26,26,T12_rotacao_resumo.csv → ciclos,lido de arquivo,v3_deck.py:434,src/rotation.py,sim
+8,Ciclos positivos,77%,0.7692307692,T12_rotacao_resumo.csv → ciclos_positivos,lido de arquivo,v3_deck.py:434,src/rotation.py,sim
+8,Parte do ganho em ciclos > 7 dias,86%,0.8615807279577219,T12_rotacao_ciclos.csv → soma resultado_bps (dias > 7) ÷ soma total,calculado no deck,v3_deck.py:435,src/rotation.py,sim
+8,"Sempre em PAXG, bps/ano",−10,-9.645114419,"T12_rotacao_resumo.csv → config = sempre PAXG, intermediário",lido de arquivo,v3_deck.py:436,src/rotation.py,sim
+8,Ida e volta no PAXG,14 bps,14.0,"T3_custos_etfs.csv → token_cost_bps (GLD, US$ 10 mil, 12 meses, taxa 5, spread 2)",lido de arquivo,v3_deck.py:442,src/analysis.py,sim
+8,Meses até empatar com o GLD,"3,9",3.9,"T3_custos_etfs.csv → crossing_months (GLD, taxa 5, spread 2)",lido de arquivo,v3_deck.py:442,src/analysis.py,sim
+8,Meses até empatar com o GLDM,"15,6",15.6,"T3_custos_etfs.csv → crossing_months (GLDM, taxa 5, spread 2)",lido de arquivo,v3_deck.py:442,src/analysis.py,sim
+8,Taxa anual do GLD,"0,40%",40 bps,config/params.json gld_fee_bps_per_year; spdrgoldshares.com/usa/gld,fato externo,v3_deck.py:442,—,sim
+8,Taxa anual do GLDM,"0,10%",10 bps,config/params.json gldm_fee_bps_per_year; ssga.com (GLDM),fato externo,v3_deck.py:442,—,sim
+8,DP da variação do desvio em 12 meses,81 bps,81.40791254,T14_risco_de_base.csv → desvio_padrao_bps (12 meses),lido de arquivo,v3_deck.py:442,src/rotation.py,sim
+8,Taxa do GLDM em 12 meses,10 bps,10.0,T14_risco_de_base.csv → taxa_gldm_no_horizonte_bps,lido de arquivo,v3_deck.py:442,src/rotation.py,sim
+8,Taxa do GLD em 12 meses,40,40.0,T14_risco_de_base.csv → taxa_gld_no_horizonte_bps,lido de arquivo,v3_deck.py:442,src/rotation.py,sim
+8,Ganho em 2022 (rodapé),+93,93.34115760319915,T12_rotacao_placebo.json → ganho_por_ano_calendario_bps.2022,lido de arquivo,v3_deck.py:444,src/rotation.py,sim
+8,Ganho em 2023 (rodapé),+166,166.17231697686705,T12_rotacao_placebo.json → ganho_por_ano_calendario_bps.2023,lido de arquivo,v3_deck.py:444,src/rotation.py,sim
+8,Ganho em 2024 (rodapé),+375,375.22860847784654,T12_rotacao_placebo.json → ganho_por_ano_calendario_bps.2024,lido de arquivo,v3_deck.py:444,src/rotation.py,sim
+8,Ganho em 2025 (rodapé),+127,126.91229384549598,T12_rotacao_placebo.json → ganho_por_ano_calendario_bps.2025,lido de arquivo,v3_deck.py:444,src/rotation.py,sim
+8,Ganho em 2026 (rodapé),+42,42.47066598750418,T12_rotacao_placebo.json → ganho_por_ano_calendario_bps.2026,lido de arquivo,v3_deck.py:444,src/rotation.py,sim
+8,Pregões e período (rodapé),1.552; 28/08/2020 a 06/11/2026,1552; 2020-08-28 a 2026-11-06,"T12_rotacao_placebo.json → dias_uteis, inicio, fim",escrito à mão,v3_deck.py:444,—,sim
+9,"Tabela (a): PAXG, regra principal (±19)",26 · +130 · [52; 212],26 · 129.90 · [51.74; 211.78],"T12_rotacao_resumo.csv → ciclos, ganho_anual_vs_gldm_bps, ic90_lo, ic90_hi",lido de arquivo,v3_deck.py:455,src/rotation.py,sim
+9,Tabela (a): Execução dois pregões depois,25 · +104 · [22; 189],25 · 104.20 · [22.49; 188.68],"T12_rotacao_resumo.csv → ciclos, ganho_anual_vs_gldm_bps, ic90_lo, ic90_hi",lido de arquivo,v3_deck.py:455,src/rotation.py,sim
+9,Tabela (a): Custos originais (±37),14 · +107 · [27; 189],14 · 107.08 · [27.01; 188.81],"T12_rotacao_resumo.csv → ciclos, ganho_anual_vs_gldm_bps, ic90_lo, ic90_hi",lido de arquivo,v3_deck.py:455,src/rotation.py,sim
+9,Tabela (a): Faixa de ±30 bps,20 · +172 · [70; 275],20 · 171.85 · [70.16; 274.68],"T12_rotacao_resumo.csv → ciclos, ganho_anual_vs_gldm_bps, ic90_lo, ic90_hi",lido de arquivo,v3_deck.py:455,src/rotation.py,sim
+9,"Tabela (a): Faixa em torno do nível móvel de 60 pregões, custos originais",28 · +12 · [−54; 78],28 · 12.17 · [-54.41; 77.60],"T12_rotacao_resumo.csv → ciclos, ganho_anual_vs_gldm_bps, ic90_lo, ic90_hi",lido de arquivo,v3_deck.py:455,src/rotation.py,sim
+9,Tabela (a): Regimes de Markov (desde set/2022),7 · +118 · [−1; 251],7 · 118.39 · [-0.60; 251.07],"v2/T19_regimes_resumo.csv → ciclos, ganho_anual_vs_gldm_bps, ic90_lo, ic90_hi",lido de arquivo,v3_deck.py:455,src/v2_regimes.py,sim
+9,Tabela (a): Faixa ±19 no mesmo período do HMM,25 · +192 · [95; 300],25 · 192.29 · [95.24; 299.50],"v2/T19_regimes_resumo.csv → ciclos, ganho_anual_vs_gldm_bps, ic90_lo, ic90_hi",lido de arquivo,v3_deck.py:455,src/v2_regimes.py,sim
+9,"Tabela (a): XAUT, mesma regra, sem ajuste",17 · +69 · [21; 120],17 · 68.93 · [20.56; 119.86],"v2/T17_xaut_resumo.csv → ciclos, ganho_anual_vs_gldm_bps, ic90_lo, ic90_hi",lido de arquivo,v3_deck.py:455,src/v2_xaut.py,sim
+9,Correlação diária XAUT × PAXG,"0,26",0.2627913787038509,v2/T17_xaut_resumo.json → correlacao_diaria_com_paxg,lido de arquivo,v3_deck.py:467,src/v2_xaut.py,sim
+9,Placebo: média das 1.000 rotações,−76,-76.23875763170491,T12_rotacao_placebo.json → placebo_media_bps,lido de arquivo,v3_deck.py:470,src/rotation.py,sim
+9,Placebo: acima da regra (PAXG),nenhuma chegou ao resultado da regra,0.0,T12_rotacao_placebo.json → fracao_placebos_acima,lido de arquivo,v3_deck.py:470,src/rotation.py,sim
+9,Placebo: acima da regra (XAUT),0 de 1.000,0.0,v2/T17_xaut_resumo.json → fracao_placebos_acima,lido de arquivo,v3_deck.py:470,src/v2_xaut.py,sim
+9,Pior queda contra o GLDM,−298 bps,-298.4436002,"T12_rotacao_resumo.csv → pior_queda_bps (papel=principal, cenário intermediário)",lido de arquivo,v3_deck.py:474,src/rotation.py,sim
+9,Capacidade por pregão (2023–2026),US$ 32–310 mil,32152 – 309989,T16_correcao_de_erro.json → capacidade_5pct_sessao_usd_por_ano,lido de arquivo,v3_deck.py:475,src/rotation.py,sim
+10,Conclusão 2: bruto contra custo,"+4,5 contra 26,5",4.526 contra 26.500,summary.json → mean_gross_mid_bps; custo = bruto − saldo,calculado no deck,v3_deck.py:488,src/analysis.py,sim
+10,Conclusão 5: risco de base 12 meses,81 bps,81.40791254,T14_risco_de_base.csv → desvio_padrao_bps (12 meses),lido de arquivo,v3_deck.py:491,src/rotation.py,sim
+10,Futuro: ganho bruto em 6 h,"+4,5",4.526334653643858,summary.json → mean_gross_mid_bps,lido de arquivo,v3_deck.py:508,src/analysis.py,sim
+10,Futuro: custo de quatro execuções,"26,5",26.49962460364386,bruto − saldo intermediário,calculado no deck,v3_deck.py:508,—,sim
+10,Futuro: horas a até 25 bps em 2026,74%,0.735148023,T11_regime_anual.csv → within_25_bps (2026),lido de arquivo,v3_deck.py:509,src/regime.py,sim
+10,Futuro: horas a até 25 bps em 2020,5%,0.04671968191,T11_regime_anual.csv → within_25_bps (2020),lido de arquivo,v3_deck.py:509,src/regime.py,sim
+10,Futuro: taxa de resgate Paxos,"0,125% a 0,5%","0,125%; 0,25%; 0,35%; 0,5%","support.paxos.com, PAX Gold (PAXG) Overview",fato externo,v3_deck.py:509,—,sim
+10,Futuro: rotação no PAXG,+130,129.901226,T12_rotacao_resumo.csv → ganho_anual_vs_gldm_bps,lido de arquivo,v3_deck.py:510,src/rotation.py,sim
+10,Futuro: rotação no XAUT,+69,68.9330003758436,v2/T17_xaut_resumo.json → ganho_anual_bps,lido de arquivo,v3_deck.py:510,src/v2_xaut.py,sim

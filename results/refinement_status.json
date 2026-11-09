@@ -1,0 +1,13 @@
+{
+  "status": "completed",
+  "at_utc": "2026-11-08T19:05:57.590831+00:00",
+  "config_hash": "953bd21eef2b023f44384d10c6707869c3cb58c39e0f232e48c7c2589502050f",
+  "outputs": [
+    "T7_paired_changes.csv",
+    "T8_forecast_summary.csv",
+    "T9_fx_coverage.csv",
+    "T9_missingness_summary.csv",
+    "T10_cost_budget.csv"
+  ],
+  "note": "Original parameters and original analytical tables retained; extensions are retrospective."
+}

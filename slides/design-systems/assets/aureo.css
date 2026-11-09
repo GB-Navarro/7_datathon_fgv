@@ -1,0 +1,165 @@
+.theme-aureo{--bg:#171914;--surface:#32382F;--gold:#CFAD68;--paper:#F3EEE3;--muted:#B8BCAF;--reference:#A4B7A4;--negative:#E69B88;--display:'DM Serif Display',Georgia,serif;--numbers:'DM Serif Display',Georgia,serif;--line:#CFAD6838;--line-light:#17191426;--light-muted:#5C6254;--light-gold:#806225;--light-ref:#5C6B55;--light-negative:#A54937}
+
+/* Áureo / intervalo. The open register replaces the repeating panel layout. */
+.theme-aureo .symbol{color:var(--gold)}
+.theme-aureo .light .symbol{color:var(--light-gold)}
+.theme-aureo .slide{padding:52px 64px 56px}
+.theme-aureo .slide-title{font-family:var(--display);font-weight:400;font-size:68px;line-height:1.04;letter-spacing:-.025em;margin:0}
+.theme-aureo .slide-title em{font-weight:400;color:var(--light-gold)}
+.theme-aureo .slide-footer{left:64px;right:56px;font-size:11px}
+.theme-aureo .slide-footer .source{max-width:780px}
+.a-section-note{font-size:13px;letter-spacing:.01em;color:var(--muted);line-height:1.5}
+.light .a-section-note{color:var(--light-muted)}
+
+/* 01 — A typographic cover, with one deliberate displacement. */
+.a-cover-imprint{display:flex;align-items:center;gap:13px;font-size:19px;font-weight:600;letter-spacing:-.025em;position:absolute;top:51px;left:64px}
+.a-cover-imprint .symbol{width:35px;height:35px}
+.a-cover-event{position:absolute;right:64px;top:53px;text-align:right;font-size:12px;line-height:1.75;color:var(--muted)}
+.a-cover-title{position:absolute;top:130px;left:64px;margin:0;font:400 145px/1.01 var(--display);letter-spacing:-.04em;z-index:1}
+.a-cover-title>span{display:block}
+.a-cover-title .a-cover-second{margin-left:177px;margin-top:13px;white-space:nowrap}
+.a-cover-title small{font-size:58px;letter-spacing:-.02em;position:relative;top:-2px}
+.a-cover-title em{font-weight:400;color:var(--gold);letter-spacing:-.035em}
+.a-cover-mark{position:absolute;right:63px;top:126px;width:210px;height:210px}
+.a-cover-registration{position:absolute;left:64px;top:471px;display:flex;gap:15px}
+.a-cover-registration i{display:block;height:1px;background:var(--gold);width:125px}
+.a-cover-registration i:last-child{position:relative;top:12px;width:55px}
+.a-cover-description{position:absolute;left:64px;top:521px;font-size:23px;line-height:1.55;letter-spacing:-.02em;color:var(--paper)}
+.a-cover-question{position:absolute;left:823px;top:515px;font:400 27px/1.25 var(--display);color:var(--muted)}
+.a-cover-date{position:absolute;right:64px;top:407px;font:10px 'IBM Plex Mono';letter-spacing:.04em;color:var(--muted)}
+
+/* 02 — An assay drawing and an ink register, without a logo tile. */
+.a-identity>.slide-title{position:absolute;left:64px;top:94px;font-size:77px}
+.a-brand-study{position:absolute;left:38px;top:296px;width:600px;height:220px}
+.interval-drawing{width:100%;height:100%;overflow:visible}
+.interval-drawing .solid-gold{fill:var(--light-gold)}
+.interval-drawing .outline-gold{fill:none;stroke:var(--light-gold);stroke-width:2}
+.interval-drawing .annotation-line{fill:none;stroke:var(--light-muted);stroke-width:1}
+.interval-drawing .drawing-label{font:21px 'DM Serif Display';fill:var(--bg)}
+.interval-drawing .drawing-note{font:11px Manrope;fill:var(--light-muted)}
+.a-brand-description{position:absolute;left:64px;top:540px;max-width:585px;font-size:16px;line-height:1.75;color:var(--light-muted)}
+.a-ink-register{position:absolute;left:741px;right:64px;top:97px}
+.a-register-caption{font:400 23px var(--display);margin-bottom:29px!important}
+.a-ink-row{position:relative;height:89px}
+.a-ink-sample{height:29px;max-width:100%;border:1px solid #17191426}
+.a-ink-row>div:last-child{display:flex;align-items:baseline;gap:12px;padding-top:9px;position:relative}
+.a-ink-row b{font-size:12px;font-weight:500}
+.a-ink-row span{font:10px 'IBM Plex Mono';color:var(--light-muted)}
+.a-ink-row small{font-size:10px;color:var(--light-muted);margin-left:auto}
+
+/* 03 — A composition proof, read as a printed page. */
+.a-type>.slide-title{position:absolute;left:64px;top:99px;font-size:104px;line-height:.97}
+.a-type-caption{position:absolute;left:68px;top:337px;font-size:12px;color:var(--light-muted)}
+.a-type-paragraph{position:absolute;left:68px;top:423px;font-size:25px;line-height:1.6;letter-spacing:-.02em}
+.a-type-settings{position:absolute;left:823px;top:151px;width:343px}
+.a-type-settings>div{position:relative;margin-bottom:31px;padding-left:35px}
+.a-type-settings b{position:absolute;left:0;top:7px;font:10px 'IBM Plex Mono';color:var(--light-gold);font-weight:400}
+.a-type-settings h2{font-size:21px;font-weight:500;letter-spacing:-.02em;margin:0 0 12px}
+.a-type-settings p{font-size:13px;line-height:1.7;color:var(--light-muted)}
+.a-margin-mark{position:absolute;right:34px;top:127px;width:22px;height:444px;color:var(--light-muted)}
+.a-margin-mark>span{font:9px 'IBM Plex Mono';position:relative;left:-3px}
+.a-margin-mark>i{display:block;position:absolute;right:9px;top:30px;bottom:0;width:1px;background:var(--line-light)}
+.a-margin-mark>i:before,.a-margin-mark>i:after{content:'';position:absolute;left:-4px;width:9px;height:1px;background:var(--line-light)}
+.a-margin-mark>i:before{top:0}.a-margin-mark>i:after{bottom:0}
+.a-evidence-register{position:absolute;left:68px;right:85px;bottom:84px;display:flex;align-items:center;gap:35px;padding-top:18px;border-top:1px solid var(--line-light);font-size:12px}
+.a-evidence-register>span{color:var(--light-muted);margin-right:auto}
+.a-evidence-register>b{font-size:12px;font-weight:400;display:inline-flex;align-items:center;gap:10px}
+.a-evidence-register>b:before{content:'';display:block;flex-shrink:0;width:6px;height:6px;background:var(--light-gold);border-radius:50%}
+.a-evidence-register .a-assumed:before{background:none;border:1px solid var(--bg);border-radius:0}
+.a-evidence-register .a-missing:before{height:1px;width:10px;background:var(--light-muted);border-radius:0}
+
+/* 04 — The sample is the left leaf of an open research register. */
+.a-sample-sheet{position:absolute;inset:0 auto 0 0;width:320px;background:var(--gold);padding:52px 40px 64px 64px;color:var(--bg)}
+.a-sample-sheet>p{font:10px 'IBM Plex Mono';letter-spacing:.045em;white-space:nowrap}
+.a-sample-sheet>h2{font:400 42px/1.04 var(--display);margin:52px 0 0;letter-spacing:-.025em}
+.a-sample-arithmetic{position:absolute;top:328px;left:64px;right:35px}
+.a-sample-arithmetic>div{display:flex;align-items:baseline;justify-content:space-between;gap:15px;margin-bottom:22px}
+.a-sample-arithmetic strong{font:400 53px/1.1 var(--display);letter-spacing:-.03em}
+.a-sample-arithmetic>div>span{font-size:11px;line-height:1.6;max-width:100px}
+.a-sample-exclusions strong{font-size:35px}
+.a-sample-total{border-top:1px solid #17191468;padding-top:19px}
+.a-sample-total strong{font-size:70px}
+.a-method>.a-section-note{position:absolute;left:392px;top:53px}
+.a-method>.slide-title{position:absolute;left:392px;top:99px;font-size:64px}
+.a-assay-register{position:absolute;left:392px;right:64px;top:285px}
+.a-assay-row{display:grid;grid-template-columns:36px 166px 1fr;gap:12px;align-items:center;min-height:65px}
+.a-assay-row+.a-assay-row{border-top:1px solid var(--line)}
+.a-assay-row>span{font:11px 'IBM Plex Mono';color:var(--gold)}
+.a-assay-row h2{font:400 28px var(--display);letter-spacing:-.01em;margin:0}
+.a-assay-row p{font-size:14px;line-height:1.6;color:var(--muted)}
+.a-method-coverage{position:absolute;left:392px;right:64px;top:585px;display:flex;align-items:center;gap:25px}
+.a-method-coverage strong{font:400 43px var(--display);color:var(--gold);letter-spacing:-.03em}
+.a-method-coverage p{font-size:12px;line-height:1.7;color:var(--muted)}
+.a-method .slide-footer .footer-brand{color:var(--bg)}
+.a-method .slide-footer .footer-brand .symbol{color:var(--bg)}
+.a-method .slide-footer .source{max-width:720px}
+
+/* 05 — The statistic becomes the opening sentence; the plot spans the page. */
+.a-data-lead{position:absolute;left:64px;top:101px}
+.a-data-lead>strong{display:block;font:400 167px/1.05 var(--display);letter-spacing:-.06em;color:var(--light-gold)}
+.a-data-lead>span{display:block;font:12px 'IBM Plex Mono';margin-top:14px;color:var(--light-muted)}
+.a-data>.slide-title{position:absolute;left:548px;top:111px;font-size:64px;line-height:1.04}
+.a-data-reading{position:absolute;left:553px;top:277px;font-size:16px;line-height:1.65;color:var(--light-muted)}
+.a-distribution-figure{position:absolute;left:64px;right:56px;top:365px;height:267px}
+.distribution-ruler{height:100%;width:100%}
+.distribution-ruler .ruler-grid{stroke:var(--line-light);stroke-width:1}
+.distribution-ruler .ruler-label{font:20px 'DM Serif Display';fill:var(--bg)}
+.distribution-ruler .ruler-sample{font:11px Manrope;fill:var(--light-muted)}
+.distribution-ruler .ruler-link{fill:none;stroke:var(--light-ref);stroke-width:1.5}
+.distribution-ruler .ruler-end{fill:none;stroke:var(--bg);stroke-width:1.5}
+.distribution-ruler .ruler-median{fill:var(--light-gold)}
+.distribution-ruler .ruler-value{font:15px 'IBM Plex Mono';fill:var(--bg)}
+.distribution-ruler .ruler-tick{font:11px 'IBM Plex Mono';fill:var(--light-muted)}
+.distribution-ruler .ruler-legend{font:11px Manrope;fill:var(--light-muted)}
+.distribution-ruler .ruler-disclaimer{font:11px Manrope;fill:var(--light-muted)}
+
+/* 06 — A full-height settlement page, rather than a KPI sidebar. */
+.a-pnl>.slide-title{position:absolute;left:64px;top:106px;font-size:68px}
+.a-waterfall-figure{position:absolute;left:49px;top:274px;width:768px;height:340px}
+.a-waterfall-figure .chart{height:100%;width:100%}
+.a-settlement-sheet{position:absolute;right:0;top:0;bottom:0;width:370px;background:var(--paper);color:var(--bg);padding:55px 40px 65px}
+.a-settlement-code{font:10px 'IBM Plex Mono';letter-spacing:.04em;color:var(--light-muted)}
+.a-settlement-sheet>h2{font:400 39px/1.03 var(--display);margin:37px 0 38px;letter-spacing:-.02em}
+.a-account-row{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:14px 0;border-bottom:1px solid var(--line-light)}
+.a-account-row>span{font-size:13px;color:var(--light-muted)}
+.a-account-row>b{font:400 23px var(--display)}
+.a-account-total{padding-top:27px}
+.a-account-total>span{display:block;font-size:12px;color:var(--light-muted)}
+.a-account-total>strong{display:block;font:400 90px/1.1 var(--display);letter-spacing:-.055em;color:var(--light-negative);margin-top:7px}
+.a-account-total>small{font:10px 'IBM Plex Mono';display:block;margin-top:10px;color:var(--light-muted)}
+.a-account-sample{margin-top:28px!important;font-size:12px;line-height:1.75;color:var(--light-muted)}
+.a-account-unknown{margin-top:21px!important;padding-top:18px;border-top:1px dashed var(--line-light);font-size:12px;line-height:1.75;color:var(--light-muted)}
+.a-pnl-assumptions{position:absolute;left:64px;top:616px;font-size:11px;line-height:1.65;color:var(--muted)}
+.a-pnl .slide-footer .source{max-width:660px;font-size:10px}
+.a-pnl .slide-footer .slide-index{color:var(--light-muted)}
+
+/* 07 — One calendar scale; two cost horizons. */
+.a-cost>.slide-title{position:absolute;left:64px;top:107px;font-size:66px;line-height:1.05}
+.a-horizon-reading{position:absolute;left:68px;top:346px;font-size:19px;line-height:1.7}
+.a-horizon-scope{position:absolute;left:68px;top:468px;font-size:12px;line-height:1.8;color:var(--light-muted)}
+.a-horizon-figure{position:absolute;left:534px;right:56px;top:110px;height:430px}
+.horizon-ruler{width:100%;height:100%;overflow:visible}
+.horizon-ruler .horizon-caption{font:12px Manrope;fill:var(--light-muted)}
+.horizon-ruler .horizon-name{font:11px Manrope;fill:var(--light-muted)}
+.horizon-ruler .horizon-number{font:70px 'DM Serif Display';fill:var(--light-gold);letter-spacing:-.03em}
+.horizon-ruler .horizon-leader{fill:none;stroke:var(--light-gold);stroke-width:1}
+.horizon-ruler .horizon-axis{fill:none;stroke:var(--light-muted);stroke-width:1}
+.horizon-ruler .horizon-point{fill:var(--light-gold)}
+.horizon-ruler .horizon-tick{font:11px 'IBM Plex Mono';fill:var(--light-muted)}
+.a-cost-premises{position:absolute;left:68px;right:64px;top:586px;display:flex;gap:40px;border-top:1px solid var(--line-light);padding-top:20px;align-items:baseline}
+.a-cost-premises>span{font:400 23px var(--display);white-space:nowrap}
+.a-cost-premises>p{font-size:12px;line-height:1.8;color:var(--light-muted)}
+
+/* 08 — The two halves of the mark become the closing composition. */
+.a-close{background:var(--gold);color:var(--bg)}
+.a-close .a-section-note{color:var(--bg)}
+.a-close>.slide-title{position:absolute;left:64px;top:126px;font-size:108px;line-height:1.05}
+.a-closing-cut{position:absolute;left:236px;right:0;top:281px;height:171px;background:var(--bg)}
+.a-closing-answer{position:absolute;left:282px;top:302px;font:400 81px/1.2 var(--display);letter-spacing:-.025em;color:var(--gold);white-space:nowrap}
+.a-closing-answer em{font-weight:400}
+.a-closing-reading{position:absolute;left:68px;top:528px;font-size:19px;line-height:1.7;letter-spacing:-.02em}
+.a-closing-limit{position:absolute;left:920px;top:513px;width:300px}
+.a-closing-limit>span{font:400 38px var(--display);letter-spacing:-.025em}
+.a-closing-limit>p{font-size:12px;line-height:1.7;margin-top:8px}
+.a-close .slide-footer{color:var(--bg)}
+.a-close .slide-footer .symbol{color:var(--bg)}

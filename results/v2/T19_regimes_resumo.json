@@ -1,0 +1,8 @@
+{
+  "inicio_regra": "2022-09-01",
+  "pregoes": 1049,
+  "reestimacoes_mensais": 51,
+  "fracao_dias_desconto_dominante": 0.3679694947569113,
+  "fracao_dias_premio_dominante": 0.1744518589132507,
+  "nota": "probabilidades filtradas com parâmetros reestimados todo mês só com dados anteriores"
+}

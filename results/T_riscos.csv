@@ -1,0 +1,7 @@
+﻿risk,metric,value,date,type,n
+stablecoin_reference,largest_absolute_hourly_close_deviation_bps,58,2021-05-17 04:00:00+00:00,measured_Bitfinex_not_all_exchanges,
+stablecoin_reference,p99_absolute_hourly_close_deviation_bps,28,,measured,
+issuer_and_redemption,contract_access_and_current_fees,,,documentary_not_quantified,
+custody_counterparty_short,account_specific_access_not_verified,,,unmeasured_not_zero,
+large_gap,reopen_p95_abs_log_bps,176.9558833,,measured,43
+other_gap,reopen_p95_abs_log_bps,142.5133763,,measured,206

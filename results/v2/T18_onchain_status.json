@@ -1,0 +1,8 @@
+{
+  "status": "reserved_for_final",
+  "reason": "Blockscout returned intermittent errors/timeouts for historical burn ranges; no incomplete on-chain series was included in the v2 deck.",
+  "mint_events_downloaded": 974,
+  "burn_collection_completed": false,
+  "deck_policy": "slide 4 keeps the original figure and the supplementary v2 page documents the cut",
+  "v1_unchanged": true
+}

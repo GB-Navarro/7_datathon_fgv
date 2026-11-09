@@ -1,0 +1,31 @@
+{
+  "regra": "faixa fixa ±19 bps, atraso de 1 pregão, custos intermediários (idêntica ao PAXG)",
+  "fonte": "Bitfinex tXAUT:USD 1h; ouro Dukascopy XAUUSD",
+  "dias_validos": 1461,
+  "dias_uteis_possiveis": 1556,
+  "cobertura_dias": 0.9389460154241646,
+  "inicio": "2020-08-28",
+  "fim": "2026-11-06",
+  "desvio_mediano_abs_bps": 11.111035233844104,
+  "desvio_medio_bps": 1.324190094728985,
+  "variancia_explicada_nivel_mes": 0.5471877630179152,
+  "correlacao_diaria_com_paxg": 0.2627913787038509,
+  "dias_em_comum_com_paxg": 1460,
+  "ganho_anual_bps": 68.9330003758436,
+  "placebo_media_bps": -47.977634178151185,
+  "placebo_p95_bps": -7.6605722166002925,
+  "fracao_placebos_acima": 0.0,
+  "simulacoes": 1000,
+  "ganho_por_ano_calendario_bps": {
+    "2020": 187.72784644578533,
+    "2021": -8.076778375920833,
+    "2022": 101.13461365349809,
+    "2023": 32.81266434398286,
+    "2024": 24.843485208709463,
+    "2025": 58.031164211977014,
+    "2026": 30.24162148604707
+  },
+  "spread_bitfinex_atual_bps": 2.2,
+  "desvio_do_pre_registro": "spread do cenário Bitfinex medido no livro de 08/11/2026, não pela amplitude da hora",
+  "escopo": "fora da amostra entre ativos, mesmo período; não é teste em datas novas"
+}

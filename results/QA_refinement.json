@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "at_utc": "2026-11-08T19:05:57.545182+00:00",
+  "checks": {
+    "one_minute_ids_match_original": true,
+    "one_minute_selection_matches_original": true,
+    "one_minute_pnl_matches_original": true,
+    "forecast_train_targets_before_decision": true,
+    "forecast_target_after_decision": true,
+    "all_models_same_test_sample": true,
+    "no_unknown_financing_replaced_by_zero": true,
+    "no_annual_gate_lowered": true,
+    "no_path_selected_on_profit": true,
+    "signal_fx_never_future": true,
+    "signal_fx_bounded_age": true,
+    "entry_fx_never_future": true,
+    "entry_fx_bounded_age": true,
+    "exit_fx_never_future": true,
+    "exit_fx_bounded_age": true
+  },
+  "failed": [],
+  "extension_status": "retrospective_extension_after_original_results",
+  "source_code_sha256": "68dae3181b5fc597e319fe1470aee078e0471f726842a7177e5ea6090efa71ee"
+}
