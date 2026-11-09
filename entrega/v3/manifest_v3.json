@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-09T02:16:11.424129+00:00",
+  "generated_at_utc": "2026-11-09T02:23:47.935683+00:00",
   "entrega": "v3",
   "data_policy": "sem dados brutos de preço; só metadados dos downloads novos",
   "files": [
@@ -165,13 +165,13 @@
     },
     {
       "path": "entrega/v3/scripts_txt/src/v3_deck.py.txt",
-      "bytes": 48921,
-      "sha256": "f6723bdcaaf7ac15c25fecc5822e921b2a4155fd7ecb09b5fb416b26c4a35817"
+      "bytes": 50377,
+      "sha256": "8ce1bbade5f895ffb364e2aee703c9843941aa7a62a4fe7b4cc5b9daaa5f5daa"
     },
     {
       "path": "entrega/v3/scripts_txt/src/v3_numeros.py.txt",
-      "bytes": 45879,
-      "sha256": "08b0ef81c7f9d89bd589a95db7a416af50ee70bf3dd184d02a6413a5b298607b"
+      "bytes": 46791,
+      "sha256": "8527b76c91a18439b3cd6324db34fc28a842deb98b8a348e0e88d1d9b0f8e47b"
     },
     {
       "path": "entrega/v3/scripts_txt/src/v3_package.py.txt",
@@ -635,8 +635,8 @@
     },
     {
       "path": "results/v3/numeros_v3.csv",
-      "bytes": 17438,
-      "sha256": "518d9ec3a34f7008179dfa653b6e6eefddc31b75da384f4dec66fb32d8fcfa08"
+      "bytes": 20470,
+      "sha256": "c9e661293a4ab90cd2f2a0ec657d648029761c7484e13b775c021694c7707fc0"
     },
     {
       "path": "results/v3/pytest_v3.xml",
@@ -646,7 +646,7 @@
     {
       "path": "results/v3/QA_presentation_v3.json",
       "bytes": 687,
-      "sha256": "abaf40071c8e8b1417d771d2b9d9d7651a49168c278210f9659abb8e6376cdcd"
+      "sha256": "ea7828b64c372ddfb3723c59103590499faac392ad21e8adab6796b50dbefb5a"
     },
     {
       "path": "results/variants.csv",
@@ -730,13 +730,13 @@
     },
     {
       "path": "slides/entrega_v3.html",
-      "bytes": 204466,
-      "sha256": "5797587677f6c0878bd759cb4dcaf0b43ba7cd1e83fc4169651b4333e31f44b7"
+      "bytes": 205530,
+      "sha256": "d16a2da26ddd0a384f7a289d9bbcdeaf91076820b901b6908b2cb1b9ab9cefe1"
     },
     {
       "path": "slides/entrega_v3.pdf",
-      "bytes": 1529494,
-      "sha256": "5de91d6f6e0f476dc24adfc8e585ff6a768d27c280a6b2e3ebba3cd4e0a1b7f2"
+      "bytes": 1589337,
+      "sha256": "d396792cef56dc205a57365099c42f9b0c5f945e56fd7ac1607b4c81d81c0a17"
     },
     {
       "path": "slides/entrega_v3_suplementar.pdf",
@@ -865,13 +865,13 @@
     },
     {
       "path": "src/v3_deck.py",
-      "bytes": 48921,
-      "sha256": "f6723bdcaaf7ac15c25fecc5822e921b2a4155fd7ecb09b5fb416b26c4a35817"
+      "bytes": 50377,
+      "sha256": "8ce1bbade5f895ffb364e2aee703c9843941aa7a62a4fe7b4cc5b9daaa5f5daa"
     },
     {
       "path": "src/v3_numeros.py",
-      "bytes": 45879,
-      "sha256": "08b0ef81c7f9d89bd589a95db7a416af50ee70bf3dd184d02a6413a5b298607b"
+      "bytes": 46387,
+      "sha256": "6baf64ea8c1a06566a4bb1695c64974c68449edc56537834c85608fbc84b1fb5"
     },
     {
       "path": "src/v3_package.py",

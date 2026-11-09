@@ -33,7 +33,7 @@ GEN = {
     'T13_fim_de_semana_resumo.json': 'src/rotation.py', 'T14_risco_de_base.csv': 'src/rotation.py',
     'T15_componentes.json': 'src/rotation.py', 'T15_componentes_serie.csv': 'src/rotation.py', 'T16_correcao_de_erro.json': 'src/rotation.py',
     'T10_cost_budget.csv': 'src/refinement.py', 'T10_grid_summary.csv': 'src/refinement.py', 'T7_paired_changes.csv': 'src/refinement.py',
-    'T2_convergencia.csv': 'src/analysis.py', 'T3_custos_etfs.csv': 'src/analysis.py', 'QA_gold_reference_summary.json': 'src/quality.py',
+    'T2_convergencia.csv': 'src/analysis.py', 'T2_trade_ledger.csv': 'src/analysis.py', 'T13_fim_de_semana.csv': 'src/rotation.py', 'T4_trend.csv': 'src/analysis.py', 'T3_custos_etfs.csv': 'src/analysis.py', 'QA_gold_reference_summary.json': 'src/quality.py',
     'v2/T17_xaut_resumo.json': 'src/v2_xaut.py', 'v2/T17_xaut_resumo.csv': 'src/v2_xaut.py', 'v2/T17_xaut_curva.csv': 'src/v2_xaut.py',
     'v2/T19_regimes_resumo.json': 'src/v2_regimes.py', 'v2/T19_regimes_resumo.csv': 'src/v2_regimes.py', 'v2/T19_regimes_probabilidades.csv': 'src/v2_regimes.py',
 }
@@ -181,13 +181,22 @@ def collect(D):
     # 10 conclusões
     add(10, 'Conclusão 2: bruto contra custo', f"{num(gross, 1, True)} contra {num(mid_cost, 1)}", f'{gross:.3f} contra {mid_cost:.3f}', 'summary.json → mean_gross_mid_bps; custo = bruto − saldo', 'C', "A arbitragem na reabertura não paga:</b>")
     add(10, 'Conclusão 5: risco de base 12 meses', num(F['r12'].desvio_padrao_bps, 0) + ' bps', F['r12'].desvio_padrao_bps, 'T14_risco_de_base.csv → desvio_padrao_bps (12 meses)', 'L', "Para quem só carrega")
-    add(10, 'Futuro: ganho bruto em 6 h', num(gross, 1, True), gross, 'summary.json → mean_gross_mid_bps', 'L', "Na reabertura, o que fecha em 6 h rende")
-    add(10, 'Futuro: custo de quatro execuções', num(mid_cost, 1), mid_cost, 'bruto − saldo intermediário', 'C', "Na reabertura, o que fecha em 6 h rende")
-    add(10, 'Futuro: horas a até 25 bps em 2026', pct(F['y26'].within_25_bps), F['y26'].within_25_bps, 'T11_regime_anual.csv → within_25_bps (2026)', 'L', "Com mais acesso e volume, a faixa tende a estreitar")
-    add(10, 'Futuro: horas a até 25 bps em 2020', pct(F['y20'].within_25_bps), F['y20'].within_25_bps, 'T11_regime_anual.csv → within_25_bps (2020)', 'L', "Com mais acesso e volume, a faixa tende a estreitar")
-    add(10, 'Futuro: taxa de resgate Paxos', '0,125% a 0,5%', '0,125%; 0,25%; 0,35%; 0,5%', 'support.paxos.com, PAX Gold (PAXG) Overview', 'E', "Ele é compatível com o custo de criar e resgatar na Paxos")
-    add(10, 'Futuro: rotação no PAXG', num(prim.ganho_anual_vs_gldm_bps, 0, True), prim.ganho_anual_vs_gldm_bps, 'T12_rotacao_resumo.csv → ganho_anual_vs_gldm_bps', 'L', "A rotação compra o token no desconto")
-    add(10, 'Futuro: rotação no XAUT', num(jx['ganho_anual_bps'], 0, True), jx['ganho_anual_bps'], 'v2/T17_xaut_resumo.json → ganho_anual_bps', 'L', "A rotação compra o token no desconto")
+    an = D['annual'].set_index('year')
+    wk = D['t13'].set_index('periodo')
+    led = pd.read_csv(ROOT / 'results/T2_trade_ledger.csv')
+    led = led[(led.horizon_hours == 6) & (led.evaluated_trade == True)].copy()
+    led['ano'] = pd.to_datetime(led.t_0, utc=True).dt.year
+    arb = led.groupby('ano').gross_mid_bps.agg(['mean', 'count'])
+    for y in [2021, 2023, 2025, 2026]:
+        add(10, f'Tabela por ano {y}: desvio mediano', num(an.loc[y, 'median_abs_bps'], 0), an.loc[y, 'median_abs_bps'], f'T11_regime_anual.csv → median_abs_bps ({y})', 'L', "ev_row('Desvio mediano, bps'")
+        add(10, f'Tabela por ano {y}: horas a até 25 bps', pct(an.loc[y, 'within_25_bps']), an.loc[y, 'within_25_bps'], f'T11_regime_anual.csv → within_25_bps ({y})', 'L', "ev_row('Horas a até 25 bps do ouro'")
+        add(10, f'Tabela por ano {y}: volume Binance, US$ bi', num(an.loc[y, 'usd_volume_millions'] / 1000, 1), an.loc[y, 'usd_volume_millions'], f'T11_regime_anual.csv → usd_volume_millions ({y})', 'C', "ev_row('Volume na Binance, US$ bi'")
+        add(10, f'Tabela por ano {y}: R² salto do ouro × token', num(wk.loc[str(y), 'r2'], 2), wk.loc[str(y), 'r2'], f'T13_fim_de_semana.csv → r2 (periodo {y}; OLS do salto do ouro sobre o movimento do token, HC1)', 'L', "ev_row('Salto do ouro explicado pelo token (R²)'")
+        yv = D['plac']['ganho_por_ano_calendario_bps'][str(y)]
+        add(10, f'Tabela por ano {y}: ganho da rotação', num(yv, 0, True) if yv else '0', yv, f'T12_rotacao_placebo.json → ganho_por_ano_calendario_bps.{y}', 'L', "ev_row('Rotação: ganho no ano, bps'")
+    for y in [2025, 2026]:
+        add(10, f'Tabela por ano {y}: arbitragem, bruto em 6 h', num(arb.loc[y, 'mean'], 1, True), f"{arb.loc[y, 'mean']:.3f} ({int(arb.loc[y, 'count'])} operações)", 'T2_trade_ledger.csv → média de gross_mid_bps (6 h, avaliadas)', 'C', "ev_row('Arbitragem: ganho bruto em 6 h, bps'")
+    add(10, 'p-valor da tendência trimestral', num(D['t4']['p_value_exploratory'], 2), D['t4']['p_value_exploratory'], 'T4_trend.csv → p_value_exploratory', 'L', "a tendência trimestral do desvio ainda não é significativa")
     return pd.DataFrame(R)
 
 

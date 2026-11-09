@@ -98,12 +98,28 @@
 9,Placebo: acima da regra (XAUT),0 de 1.000,0.0,v2/T17_xaut_resumo.json → fracao_placebos_acima,lido de arquivo,v3_deck.py:470,src/v2_xaut.py,sim
 9,Pior queda contra o GLDM,−298 bps,-298.4436002,"T12_rotacao_resumo.csv → pior_queda_bps (papel=principal, cenário intermediário)",lido de arquivo,v3_deck.py:474,src/rotation.py,sim
 9,Capacidade por pregão (2023–2026),US$ 32–310 mil,32152 – 309989,T16_correcao_de_erro.json → capacidade_5pct_sessao_usd_por_ano,lido de arquivo,v3_deck.py:475,src/rotation.py,sim
-10,Conclusão 2: bruto contra custo,"+4,5 contra 26,5",4.526 contra 26.500,summary.json → mean_gross_mid_bps; custo = bruto − saldo,calculado no deck,v3_deck.py:488,src/analysis.py,sim
-10,Conclusão 5: risco de base 12 meses,81 bps,81.40791254,T14_risco_de_base.csv → desvio_padrao_bps (12 meses),lido de arquivo,v3_deck.py:491,src/rotation.py,sim
-10,Futuro: ganho bruto em 6 h,"+4,5",4.526334653643858,summary.json → mean_gross_mid_bps,lido de arquivo,v3_deck.py:508,src/analysis.py,sim
-10,Futuro: custo de quatro execuções,"26,5",26.49962460364386,bruto − saldo intermediário,calculado no deck,v3_deck.py:508,—,sim
-10,Futuro: horas a até 25 bps em 2026,74%,0.735148023,T11_regime_anual.csv → within_25_bps (2026),lido de arquivo,v3_deck.py:509,src/regime.py,sim
-10,Futuro: horas a até 25 bps em 2020,5%,0.04671968191,T11_regime_anual.csv → within_25_bps (2020),lido de arquivo,v3_deck.py:509,src/regime.py,sim
-10,Futuro: taxa de resgate Paxos,"0,125% a 0,5%","0,125%; 0,25%; 0,35%; 0,5%","support.paxos.com, PAX Gold (PAXG) Overview",fato externo,v3_deck.py:509,—,sim
-10,Futuro: rotação no PAXG,+130,129.901226,T12_rotacao_resumo.csv → ganho_anual_vs_gldm_bps,lido de arquivo,v3_deck.py:510,src/rotation.py,sim
-10,Futuro: rotação no XAUT,+69,68.9330003758436,v2/T17_xaut_resumo.json → ganho_anual_bps,lido de arquivo,v3_deck.py:510,src/v2_xaut.py,sim
+10,Conclusão 2: bruto contra custo,"+4,5 contra 26,5",4.526 contra 26.500,summary.json → mean_gross_mid_bps; custo = bruto − saldo,calculado no deck,v3_deck.py:506,src/analysis.py,sim
+10,Conclusão 5: risco de base 12 meses,81 bps,81.40791254,T14_risco_de_base.csv → desvio_padrao_bps (12 meses),lido de arquivo,v3_deck.py:509,src/rotation.py,sim
+10,Tabela por ano 2021: desvio mediano,38,38.3768833,T11_regime_anual.csv → median_abs_bps (2021),lido de arquivo,v3_deck.py:494,src/regime.py,sim
+10,Tabela por ano 2021: horas a até 25 bps,32%,0.3165589935,T11_regime_anual.csv → within_25_bps (2021),lido de arquivo,v3_deck.py:495,src/regime.py,sim
+10,"Tabela por ano 2021: volume Binance, US$ bi","1,5",1474.84033,T11_regime_anual.csv → usd_volume_millions (2021),calculado no deck,v3_deck.py:496,src/regime.py,sim
+10,Tabela por ano 2021: R² salto do ouro × token,"0,00",9.669277953e-05,"T13_fim_de_semana.csv → r2 (periodo 2021; OLS do salto do ouro sobre o movimento do token, HC1)",lido de arquivo,v3_deck.py:497,src/rotation.py,sim
+10,Tabela por ano 2021: ganho da rotação,0,0.0,T12_rotacao_placebo.json → ganho_por_ano_calendario_bps.2021,lido de arquivo,v3_deck.py:499,src/rotation.py,sim
+10,Tabela por ano 2023: desvio mediano,70,70.11980546,T11_regime_anual.csv → median_abs_bps (2023),lido de arquivo,v3_deck.py:494,src/regime.py,sim
+10,Tabela por ano 2023: horas a até 25 bps,16%,0.1565261727,T11_regime_anual.csv → within_25_bps (2023),lido de arquivo,v3_deck.py:495,src/regime.py,sim
+10,"Tabela por ano 2023: volume Binance, US$ bi","0,6",571.365175,T11_regime_anual.csv → usd_volume_millions (2023),calculado no deck,v3_deck.py:496,src/regime.py,sim
+10,Tabela por ano 2023: R² salto do ouro × token,"0,12",0.1216135088,"T13_fim_de_semana.csv → r2 (periodo 2023; OLS do salto do ouro sobre o movimento do token, HC1)",lido de arquivo,v3_deck.py:497,src/rotation.py,sim
+10,Tabela por ano 2023: ganho da rotação,+166,166.17231697686705,T12_rotacao_placebo.json → ganho_por_ano_calendario_bps.2023,lido de arquivo,v3_deck.py:499,src/rotation.py,sim
+10,Tabela por ano 2025: desvio mediano,34,33.53452908,T11_regime_anual.csv → median_abs_bps (2025),lido de arquivo,v3_deck.py:494,src/regime.py,sim
+10,Tabela por ano 2025: horas a até 25 bps,37%,0.3683409437,T11_regime_anual.csv → within_25_bps (2025),lido de arquivo,v3_deck.py:495,src/regime.py,sim
+10,"Tabela por ano 2025: volume Binance, US$ bi","6,1",6145.742868,T11_regime_anual.csv → usd_volume_millions (2025),calculado no deck,v3_deck.py:496,src/regime.py,sim
+10,Tabela por ano 2025: R² salto do ouro × token,"0,09",0.09442558328,"T13_fim_de_semana.csv → r2 (periodo 2025; OLS do salto do ouro sobre o movimento do token, HC1)",lido de arquivo,v3_deck.py:497,src/rotation.py,sim
+10,Tabela por ano 2025: ganho da rotação,+127,126.91229384549598,T12_rotacao_placebo.json → ganho_por_ano_calendario_bps.2025,lido de arquivo,v3_deck.py:499,src/rotation.py,sim
+10,Tabela por ano 2026: desvio mediano,15,14.77685489,T11_regime_anual.csv → median_abs_bps (2026),lido de arquivo,v3_deck.py:494,src/regime.py,sim
+10,Tabela por ano 2026: horas a até 25 bps,74%,0.735148023,T11_regime_anual.csv → within_25_bps (2026),lido de arquivo,v3_deck.py:495,src/regime.py,sim
+10,"Tabela por ano 2026: volume Binance, US$ bi","10,3",10304.65226,T11_regime_anual.csv → usd_volume_millions (2026),calculado no deck,v3_deck.py:496,src/regime.py,sim
+10,Tabela por ano 2026: R² salto do ouro × token,"0,66",0.6567795325,"T13_fim_de_semana.csv → r2 (periodo 2026; OLS do salto do ouro sobre o movimento do token, HC1)",lido de arquivo,v3_deck.py:497,src/rotation.py,sim
+10,Tabela por ano 2026: ganho da rotação,+42,42.47066598750418,T12_rotacao_placebo.json → ganho_por_ano_calendario_bps.2026,lido de arquivo,v3_deck.py:499,src/rotation.py,sim
+10,"Tabela por ano 2025: arbitragem, bruto em 6 h","+9,5",9.458 (24 operações),"T2_trade_ledger.csv → média de gross_mid_bps (6 h, avaliadas)",calculado no deck,v3_deck.py:498,src/analysis.py,sim
+10,"Tabela por ano 2026: arbitragem, bruto em 6 h","−2,1",-2.113 (16 operações),"T2_trade_ledger.csv → média de gross_mid_bps (6 h, avaliadas)",calculado no deck,v3_deck.py:498,src/analysis.py,sim
+10,p-valor da tendência trimestral,"0,29",0.2901927079,T4_trend.csv → p_value_exploratory,lido de arquivo,v3_deck.py:528,src/analysis.py,sim

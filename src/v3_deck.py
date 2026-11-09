@@ -141,10 +141,10 @@ tr.hl td{background:#E4D6B6;font-weight:800}
 .roomy .fnode{padding:14px 16px}.roomy .figt{font-size:16px}.roomy .read{font-size:16px}
 .pagedark .hd{color:#E07A5F;border-bottom-color:#F2EADB}.pagedark .hd .no{color:#F2EADB}
 .pagedark .lab{color:#E07A5F}
-.concl{display:grid;grid-template-columns:44px 1fr;gap:6px;margin-bottom:11px}
+.concl{display:grid;grid-template-columns:44px 1fr;gap:6px;margin-bottom:8px}
 .concl .n{font-family:Slab,serif;font-size:34px;color:#E07A5F;line-height:1}
-.concl p{font-size:16px;line-height:1.42}
-.tok{margin-top:12px;border-top:3px solid #E07A5F;padding-top:8px}.tokg{display:grid;grid-template-columns:1fr 1fr 1fr;gap:28px}.tokg b{color:#E07A5F;font-size:16px;display:block}.tokg p{font-size:14.5px;line-height:1.4;margin-top:3px}.persp{margin-top:8px;font-size:16px;line-height:1.38}.persp b{color:#E07A5F}
+.concl p{font-size:15.5px;line-height:1.4}
+.tok{margin-top:10px;border-top:3px solid #E07A5F;padding-top:8px}.tokg{display:grid;grid-template-columns:1fr 1.3fr;gap:30px;align-items:start}.evo{color:#F2EADB}.evo th{background:#3A342C;color:#F2EADB;padding:4px 8px;font-size:13px}.evo td{border-color:#4A443B;padding:3px 8px;font-size:13.5px}.tokg b{color:#E07A5F;font-size:16px;display:block}.tokg p{font-size:14px;line-height:1.38;margin-top:3px}.persp{margin-top:8px;font-size:16px;line-height:1.38}.persp b{color:#E07A5F}
 .impl{background:#F4ECDB;color:#1C1A17;padding:11px 15px;margin-bottom:11px}
 .impl b{color:#B23A1E;display:block;font-size:16.5px;margin-bottom:3px}
 .impl p{font-size:15px;line-height:1.42}
@@ -480,6 +480,24 @@ def build(D):
                       'Tabelas T12 (PAXG), T17 (XAUT) e T19 (regimes) no pacote. IC por bootstrap circular em blocos de 6 meses (5.000 repetições).'))
 
     # 10 · discussão (escura)
+    an = D['annual'].set_index('year')
+    wk = D['t13'].set_index('periodo')
+    yrr = D['plac']['ganho_por_ano_calendario_bps']
+    led = pd.read_csv(ROOT / 'results/T2_trade_ledger.csv')
+    led = led[(led.horizon_hours == 6) & (led.evaluated_trade == True)].copy()
+    led['ano'] = pd.to_datetime(led.t_0, utc=True).dt.year
+    arb = led.groupby('ano').gross_mid_bps.agg(['mean', 'count'])
+    YS = [2021, 2023, 2025, 2026]
+    def ev_row(label, vals):
+        return f'<tr><td>{label}</td>' + ''.join(f'<td class="n">{v}</td>' for v in vals) + '</tr>'
+    evo_rows = ''.join([
+        ev_row('Desvio mediano, bps', [num(an.loc[y, 'median_abs_bps'], 0) for y in YS]),
+        ev_row('Horas a até 25 bps do ouro', [pct(an.loc[y, 'within_25_bps']) for y in YS]),
+        ev_row('Volume na Binance, US$ bi', [num(an.loc[y, 'usd_volume_millions'] / 1000, 1) for y in YS]),
+        ev_row('Salto do ouro explicado pelo token (R²)', [num(wk.loc[str(y), 'r2'], 2) for y in YS]),
+        ev_row('Arbitragem: ganho bruto em 6 h, bps', [num(arb.loc[y, 'mean'], 1, True) if y in arb.index else '—' for y in YS]),
+        ev_row('Rotação: ganho no ano, bps', [num(yrr[str(y)], 0, True) if yrr[str(y)] else '0' for y in YS])])
+    evo_n = f'{int(arb.loc[2025, "count"])} operações em 2025 e {int(arb.loc[2026, "count"])} em 2026'
     body = f"""
 <div class="grid" style="grid-template-columns:1.12fr 1fr 1fr;gap:30px">
  <div>
@@ -493,7 +511,7 @@ def build(D):
  <div>
   <div class="lab">Implicações práticas</div>
   <div class="impl"><b>Investidores</b><p>Olhar o desvio do dia antes de escolher entre token e ETF; trocar de veículo no desconto vale mais que a taxa anual.</p></div>
-  <div class="impl"><b>Corretoras e emissor</b><p>Baratear e abrir a criação e o resgate é a alavanca para estreitar a faixa; a tendência de 2026 ainda não é estatisticamente firme.</p></div>
+  <div class="impl"><b>Corretoras e emissor</b><p>O atrito está no nível. Hipótese a testar: resgate mais barato e com menos exigências estreitaria a faixa.</p></div>
   <div class="impl"><b>Pesquisa em tokenização</b><p>Medir o nível do desvio, além da correlação, antes de tratar um token como substituto do ativo real.</p></div>
  </div>
  <div style="border:2px solid #6B6457;padding:14px 16px">
@@ -504,14 +522,13 @@ def build(D):
   <p style="font-size:15px">Próximos passos: acompanhar a regra daqui para frente sem mudá-la; incluir emissão on-chain e outras corretoras; levar a conta para reais, com IOF e IR.</p>
  </div>
 </div>
-<div class="tok"><div class="lab">O futuro do ouro tokenizado</div><div class="tokg">
- <div><b>Em horas, sobra pouco desvio.</b><p>Na reabertura, o que fecha em 6 h rende {num(gross, 1, True)} bps, menos que o custo de quatro execuções ({num(mid_cost, 1)}). A arbitragem falha porque o desvio de curto prazo já é pequeno; o que resta é o nível de meses.</p></div>
- <div><b>O nível depende do acesso ao emissor.</b><p>Ele é compatível com o custo de criar e resgatar na Paxos (0,125% a 0,5%, com conta verificada). Com mais acesso e volume, a faixa tende a estreitar: em 2026, {pct(F['y26'].within_25_bps)} das horas ficaram a até 25 bps do ouro, contra {pct(F['y20'].within_25_bps)} em 2020.</p></div>
- <div><b>Quem troca de veículo ajuda a fechar o desvio.</b><p>A rotação compra o token no desconto e o vende no prêmio, sem prazo e sem venda a descoberto. Rendeu {num(prim.ganho_anual_vs_gldm_bps, 0, True)} bps por ano no PAXG e {num(jx['ganho_anual_bps'], 0, True)} no XAUT. Mais volume abre espaço para mais carteiras.</p></div>
-</div>
-<p class="persp"><b>Perspectiva.</b> O ouro tokenizado já acompanha o ouro no dia. Com acesso mais barato ao emissor, tende a acompanhar também no nível; até lá, a diferença paga quem carrega ouro e pode trocar de veículo.</p></div>
-<div class="ft" style="position:absolute;left:106px;right:106px;bottom:46px;border-top:2px solid #6B6457;color:#F2EADB;padding-top:14px;display:flex;align-items:center;gap:18px">
- {symbol_big(54).replace(INK, '#F2EADB')}<span style="font-family:Slab,serif;font-size:36px">Obrigado!</span><span style="font-size:16px;color:#C9BFA9">Equipe BitFlow · Gabriel Navarro, Lorenzo Cavalcante e Rodrigo Menin · 7º Datathon de Moedas Digitais FGV EESP</span>
+<div class="tok"><div class="lab">O token e o ouro ao longo do tempo</div><div class="tokg">
+ <table class="evo"><thead><tr><th></th><th class="n">2021</th><th class="n">2023</th><th class="n">2025</th><th class="n">2026*</th></tr></thead><tbody>{evo_rows}</tbody></table>
+ <div><p><b>Leitura.</b> O PAXG já entrega o retorno do ouro; o que o separa do ativo é o nível do desvio. Até 2025 esse nível abriu e fechou sem direção. Em 2026, com o maior volume da amostra, o desvio ficou menor, a arbitragem perdeu até o ganho bruto e o token passou a antecipar boa parte do salto do ouro na reabertura, a descoberta de preço fora do horário descrita por Cong, Mayer e Rabetti (2026).</p>
+ <p><b>Daqui para frente.</b> São dez meses, e a tendência trimestral do desvio ainda não é significativa (p = {num(D['t4']['p_value_exploratory'], 2)}). Se 2026 se mantiver, o token fica mais perto de um substituto do ouro e a rotação rende menos, como já rendeu no ano. Acompanhar a regra sem mudá-la é o teste.</p></div>
+</div><p class="note" style="color:#C9BFA9;margin-top:3px;font-size:11.5px">* até 08/11. R²: salto do ouro de sexta à reabertura contra o movimento do token no fim de semana. Arbitragem simulada de 2024 a 2026 (6 h): {evo_n}.</p></div>
+<div class="ft" style="position:absolute;left:106px;right:106px;bottom:16px;border-top:2px solid #6B6457;color:#F2EADB;padding-top:8px;display:flex;align-items:center;gap:14px">
+ {symbol_big(32).replace(INK, '#F2EADB')}<span style="font-family:Slab,serif;font-size:24px">Obrigado!</span><span style="font-size:14px;color:#C9BFA9">Equipe BitFlow · Gabriel Navarro, Lorenzo Cavalcante e Rodrigo Menin · 7º Datathon de Moedas Digitais FGV EESP</span>
 </div>"""
     pages.append(page(10, 'V · Discussão', 'Discussão, implicações e conclusões', body, '', dark=True))
     return pages
